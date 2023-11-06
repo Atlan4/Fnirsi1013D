@@ -1,2 +1,2 @@
 # Fnirsi1013D
-Osciloskop FNIRSI1013D alternate opensource firmware
+Oscilloscope  FNIRSI1013D alternative opensource firmware
