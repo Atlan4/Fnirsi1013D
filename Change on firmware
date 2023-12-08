@@ -20,6 +20,8 @@
 	1795 Changing the dimensions of the button and moving the overall placement of the RTC wheel scope_trigger_settings
 	4735 Called the function to change the color of the START/STOP button to green when AUTOSET is pressed
 	512 471 CHange next and prev function button (inverted) change text
+	180 Add for single mode screen mismas - scope_display_trace_data(); 
+	150 No switch triger mode to AUTO, cancel //scopesettings.triggermode = 0;
  	
 ----------------------------------------------------------------------------------
 ******************************* State machine ************************************
