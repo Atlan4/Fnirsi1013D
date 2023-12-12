@@ -11,17 +11,19 @@
 	7459 thumbnail-adding a trigger cursor color
 	6791 correction, forbidden marking of deleted thumbnails
 	1511 green box run-black text, stop red box white text
-	4680 Add scope_run_stop_button(0); for swith run/stop button to stop
+	4680 Add scope_run_stop_button(0); for swith run/stop button to stop, add if(scopesettings.rightmenustate == 0)
 	 427 gren-black/red white button Start/stop
 	5085 Add calibration osffet horizontal triger, +x move right, -x move left ,scope_display_trace_data
 	3606 Select All/Clear add button in measures_menu
-	4401 Change chek  scope_process_trigger - for high f ,canceled since version 0.015
+	4401 Change chek  scope_process_trigger - for high f
 	5226 Filtering values on the display (prevsample+sample)/2
 	1795 Changing the dimensions of the button and moving the overall placement of the RTC wheel scope_trigger_settings
 	4735 Called the function to change the color of the START/STOP button to green when AUTOSET is pressed
 	512 471 CHange next and prev function button (inverted) change text
 	180 Add for single mode screen mismas - scope_display_trace_data(); 
 	150 No switch triger mode to AUTO, cancel //scopesettings.triggermode = 0;
+	7768 Add date and time text in thumbnail 
+	362 Add date and time text in picture view
  	
 ----------------------------------------------------------------------------------
 ******************************* State machine ************************************
@@ -29,12 +31,13 @@
 	 973 confirmation calibration
 	2489 change dimension box (confirm delete yes/no)  _|
 	1400 runstate change program position gren-black/red white button Start/stop
-	3200 Add scope_run_stop_button(0); for swith run/stop button to stop
+	3200 Add scope_run_stop_button(0); for swith run/stop button to stop,add if(scopesettings.rightmenustate == 0)
 	1896 Select All/Clear add button in measures_menu
 	128  Prohibited shifting of track ch1 if channel CH1 is switched off void touch_handler(void)
 	138  Prohibited shifting of track ch2 if channel CH2 is switched off void touch_handler(void)
 	527  After Autoset, it is not possible to move CH1 if CH2 is off. If ch2 is off, use touch for ch1	
 	1462 CHange next and prev function button in wavwforms view (inverted) 1507
+	
 	
 	
 	
