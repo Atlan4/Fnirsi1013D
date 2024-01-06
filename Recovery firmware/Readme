@@ -1,0 +1,9 @@
+Recovery firmware
+
+Disconnect all BNCs.
+Upload the firmware to the oscilloscope.
+Turn off the oscilloscope
+ON the oscilloscope
+Wait until the test runs on all ranges
+After the text "Saved file" select the USB menu and upload the new firmware.
+Turn the oscilloscope off and on, the new firmware will run
