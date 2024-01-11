@@ -1,6 +1,7 @@
 Well, I reproduced this situation.
 
 Windows solution:
+https://www.eevblog.com/forum/testgear/fnirsi-1013d-100mhz-tablet-oscilloscope/1525/
 
 You can check the offset of the first partition using the command line:
 DISKPART
@@ -31,3 +32,4 @@ Please note that the default offset for 1..4 GB devices is 65536, so there will 
 I think I should at least add a check for "hidden" free space on the SD, what do you think?
 
 Linux solution:
+https://www.youtube.com/watch?v=4yFmStYuK_o
