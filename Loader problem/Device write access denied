@@ -1,10 +1,6 @@
-    Your card may be formatted with not enough space between MBR and first partition. Try, please, press "Clear" button
-
-    Maybe you reccomend the right formating?
-    Clear did nothing.
-
-
 Well, I reproduced this situation.
+
+Windows solution:
 
 You can check the offset of the first partition using the command line:
 DISKPART
@@ -33,3 +29,5 @@ After creating the partition, you need to format it as FAT32. Then use my loader
 Please note that the default offset for 1..4 GB devices is 65536, so there will not be enough space for oscilloscope firmware without special repartitioning.
 
 I think I should at least add a check for "hidden" free space on the SD, what do you think?
+
+Linux solution:
