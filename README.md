@@ -1,4 +1,4 @@
-# Fnirsi1013D
++# Fnirsi1013D
 Oscilloscope  FNIRSI1013D alternative opensource firmware
 
 No one is responsible for anything, you do everything at your own risk.
@@ -7,7 +7,7 @@ Everything is described on the pages https://www.eevblog.com/forum/testgear/fnir
 
 In case of problems with the touch screen, see this: configuration_file.txt
 
-To upload the firmware under Windows, download the LOADER.zip file, unzip it and run it. Turn on the oscilloscope, connect the USB cable, select the option to turn on USB in the oscilloscope menu. After about 2 seconds to 1 minute, windows will recognize the device and open a window with folders. Now in the loader program, select the BIN you want to load. Upload it to the device, touch the screen to turn off the usb, and turn off the oscilloscope.
+To upload the firmware under Windows, download the LOADER.zip file, unzip it and run it. Turn on the oscilloscope, connect the USB cable, select the option to turn on USB in the oscilloscope menu. After about 10 seconds, windows will recognize the device and open a window with folders. Now in the loader program, select the BIN you want to load. Upload it to the device, touch the screen to turn off the usb, and turn off the oscilloscope.
 
 https://www.youtube.com/watch?v=LVI45oJHTK8
 
