@@ -11,6 +11,9 @@ To upload the firmware under Windows, download the LOADER.zip file, unzip it and
 
 https://www.youtube.com/watch?v=LVI45oJHTK8
 
+CALIBRATION
+Follow the instructions for calibration.  You must have the notification confirmation option turned on. Calibrate without usb and probes.  In the next step, when prompted, connect the required voltage to both channels at once.  After finishing the calibration, close the menu and turn off the oscilloscope to save the data.
+
 Loader allows you to return the oscilloscope card to the previous firmware, the new firmware is stored only on the SD card, where the original is loaded in the flash of the device.
 The safe solution is to use another SD card. Upload the firmware there, and insert the cards in the device.
 
