@@ -1,4 +1,4 @@
-+# Fnirsi1013D
+Fnirsi1013D
 Oscilloscope  FNIRSI1013D alternative opensource firmware
 
 No one is responsible for anything, you do everything at your own risk.
