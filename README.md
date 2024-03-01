@@ -5,7 +5,7 @@ No one is responsible for anything, you do everything at your own risk.
 
 Everything is described on the pages https://www.eevblog.com/forum/testgear/fnirsi-1013d-100mhz-tablet-oscilloscope/msg5172177/#msg5172177
 
-The RTC module is not required for the function of the alternative software.  And it is disabled by default.
+The RTC module is not required for the function of the alternative software. The RTC module does not include an oscilloscope, it must be installed additionally.  And it is disabled by default.
 
 In case of problems with the touch screen, see this: configuration_file.txt
 
