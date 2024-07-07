@@ -23,3 +23,6 @@ The safe solution is to use another SD card. Upload the firmware there, and inse
 
 
 Original source https://github.com/pecostm32/FNIRSI_1013D_Firmware
+
+modify 1014d startup for 1013d.zip it is used to edit the trigger in the 1014d folder, makes adjustments and modifies the 1013d .bin in the 1013 folder. the trigger in the 1014d folder is modified for the oscilloscope 1013d, added touch display support, removed uart for 1014
+
