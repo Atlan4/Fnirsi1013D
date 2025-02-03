@@ -1,0 +1,115 @@
+The waveform file holds both settings and signal data. The first 800 bytes are for the settings. The settings are stored as little endian 32 bit integers.
+Then follows the signal data for channel 1, (0x320-0xED7) which is 3000 bytes and after that 3000 bytes for the channel 2 data (0xED8-0x1A8F). All samples are single byte values.
+
+The checksum is calculated over all the data. It sums the 32 bit integers. It starts with 0 and also adds the not used in between words. The sample data is added in 4 byte chunks.
+
+Look at the function "void scope_prepare_setup_for_file(void)" in the file "scope_functions.c" for how it is done.
+
+The settings part holds the following data: 8fc stred, 8f8 triger ch1
+
+v0.026d
+Byte offset      Value                       Channel 
+          0      Checksum                          x
+          4      File version                      x
+          
+         32      Enable                            1       (0 not enabled, 1 enabled)
+         36      Display volt per division         1       (Volt per division setting for what is displayed. Range 0 - 6)
+         40      Sample volt per division          1       (Volt per division setting for what is sampled. Range 0 - 6)
+         44      FFT enable                        1       (0 not enabled, 1 enabled)
+         48      AC / DC coupling                  1       (0 DC, 1 AC)
+         52      Probe magnification               1
+         56	 V_A				   1
+         60      Trace position on screen          1
+         64      Minimum measured                  1
+         68      Maximum measured                  1
+         72      Average measured                  1
+         76	 RMS measured			   1
+         80      Center value measured             1
+         84      Peak peak value measured          1
+         88      Frequency valid                   1
+         92      Frequency determined              1
+         96      Average Low time measured         1
+        100      Average high time measured        1
+        104      Average periode time measured     1
+        
+        128      Enable                            2
+        132      Display volt per division         2
+        136      Sample volt per division          2
+        140      FFT enable                        2
+        144      AC / DC coupling                  2
+        148      Probe magnification               2
+        152	 V_A				   2
+        156      Trace position on screen          2
+        160      Minimum measured                  2
+        164      Maximum measured                  2
+        168      Average measured                  2
+        172      RMS measured			   2
+        176      Center value measured             2
+        180      Peak peak value measured          2
+        184      Frequency valid                   2
+        188      Frequency determined              2
+        192      Average Low time measured         2
+        196      Average high time measured        2
+        200      Average periode time measured     2
+        
+        224      Time per division                 x
+        228      Sample rate                       x
+        232      Trigger mode                      x
+        236      Trigger edge                      x
+        240      Trigger channel                   x
+	244      Trigger level                     x
+        248      Trigger horizontal position       x
+        252      Trigger horizontal position       x
+        256      Trigger vertical position         x
+        260      Display have trigger              x
+        264      Display trigger index             x
+        
+        320      Move speed                        x
+        324      Right menu state                  x
+        328      Screen brightness                 x
+        332      Grid brightness                   x
+        336      Always 50% trigger                x
+        340      X-Y display mode                  x
+        344      Confirmation mode                 x
+        348      Long mode              	   x
+        352      Average mode          		   x
+        356      Long memory		           x
+        
+        416      Time cursors enable               x
+        420      Volt cursors enable               x
+        424      Time cursor 1 position            x
+        428      Time cursor 2 position            x
+        432      Volt cursor 1 position            x
+        436      Volt cursor 2 position            x
+        440	 Lockcursors 		           x
+        
+        480      Hide values                       1
+        484      Hide values                       2
+        488      Vmax enable                       1
+        492      Vmin enable                       1
+        496      Vavg enable                       1
+        500      Vrms enable                       1
+        504      Vpp enable                        1
+        508      Vp enable                         1
+        512      Freq enable                       1
+        516      Cycle enable                      1
+        520      Time+ enable                      1
+        524      Time- enable                      1
+        528      Duty+ enable                      1
+        532      Duty- enable                      1
+        536      Vmax enable                       2
+        540      Vmin enable                       2
+        544      Vavg enable                       2
+        548      Vrms enable                       2
+        552      Vpp enable                        2
+        556      Vp enable                         2
+        560      Freq enable                       2
+        564      Cycle enable                      2
+        568      Time+ enable                      2
+        572      Time- enable                      2
+        576      Duty+ enable                      2
+        580      Duty- enable                      2
+        
+        
+        
+        
