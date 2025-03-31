@@ -1,7 +1,7 @@
 Fnirsi1013D
 Oscilloscope  FNIRSI1013D alternative opensource firmware
 
-PLEASE download GUIDE to firmvare and read manual. (download manual, loader 1.1.3 and latest firmware)
+PLEASE download GUIDE for firmvare and read manual. (download manual, loader 1.1.3 and latest firmware)
 
 No one is responsible for anything, you do everything at your own risk.
 
