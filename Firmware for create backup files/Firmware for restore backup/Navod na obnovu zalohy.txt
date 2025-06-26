@@ -1,0 +1,36 @@
+
+Ahoj Mirek,
+
+tu je program na obnovenie blesku tvojho zameriavača. Musí byť nainštalovaný na SD kartu, rovnako ako to robí pre open source firmvér alebo zálohovací program.
+
+Hľadá súbor s názvom „FNIRSI_1013D_main.bin“ alebo „FNIRSI_1013D_full.bin“ na karte SD a ak ho nájde, načíta ho do pamäte Flash. Neexistuje žiadna kontrola platnosti súboru.
+main bin nahradit tym co vzniklo pri zalohe
+
+_hlavný je zapísaný na adresu 0x00027000 vo flashi. _full začne písať na adrese 0x00000000.
+
+V prílohe nájdete program na obnovenie a hlavný firmvér, ktorý som upravil tak, aby dotykový panel zostal na pokoji.
+
+Uistite sa, že súbor „FNIRSI_1013D_main.bin“ je na SD karte v hornom adresári. Nezáleží na tom, či sú na SD karte ďalšie súbory.
+
+Po zapísaní flashu sa program sám vyberie z SD karty a po zapnutí sa osciloskop spustí s pôvodným firmvérom.
+
+Nasleduje konfigurácia dotykového panela, ale to si pravdepodobne bude vyžadovať nejaké experimentovanie tam a späť, aby to bolo správne.
+* fnirsi_1013d_fwr.bin.txt (165,07 kB - stiahnuté 38-krát.)
+* FNIRSI_1013D_main.bin.txt (1839,97 kB - stiahnuté 37-krát.)
+
+https://www.eevblog.com/forum/testgear/fnirsi-1013d-100mhz-tablet-oscilloscope/msg5749727/
+
+
+here is a program to restore the flash of your scope. It needs to be installed on the SD card, just like how it is done for the open source firmware or the backup program.
+
+It looks for a file named "FNIRSI_1013D_main.bin" or "FNIRSI_1013D_full.bin" on the SD card and if found it will load it to the flash. There is no check on the validity of the file.
+
+The _main one is written to address 0x00027000 in the flash. The _full one starts writing at address 0x00000000.
+
+Attached are both the restore program and the _main firmware that I modified to leave the touch panel alone.
+
+Make sure the "FNIRSI_1013D_main.bin" file is on the SD card in the top directory. It does not matter if there are other files on the SD card.
+
+After the writing of the flash, the program removes itself from the SD card and after power up the scope starts with the original firmware.
+
+The touch panel configuration is up next, but that probably will require some back and forth experimenting to get it right.
