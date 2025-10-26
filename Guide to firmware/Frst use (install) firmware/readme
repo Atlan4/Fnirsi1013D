@@ -1,0 +1,10 @@
+ Use the loader 1.1.3 program and upload the fnirsi_1013d.bin firmware to the oscilloscope. 
+
+If you then want to update some part of the oscilloscope or restore settings, use the UPDATER button on the initial boot screen. (This option is enabled in the firmware in the other settings menu)
+http://www.youtube.com/watch?v=3iCg5SM3Y_8
+
+Then turn on the oscilloscope and select the UPDATE option.
+The program will start, which allows you to move-copy files to the oscilloscope's SD card. And from there, upload them to the oscilloscope's SD card using the UPLOAD button.
+
+File data.cal - use the download button to save the input divider calibration to the SD card for backup and restore if necessary (use the upload button)
+File TP&screen.bin - use the download button to save the TP and screen settings to the SD card for backup and restore if necessary (use the upload button)
