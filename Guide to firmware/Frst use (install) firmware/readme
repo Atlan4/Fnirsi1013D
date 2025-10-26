@@ -1,5 +1,6 @@
 Use the loader 1.1.3 program and upload the fnirsi_1013d.bin firmware to the oscilloscope. 
 This option will delete the calibration data and data for the TP and screen. Which will not bother a new user, because they have not created them yet.
+https://www.eevblog.com/forum/testgear/fnirsi-1013d-100mhz-tablet-oscilloscope/msg6081693/#msg6081693
 
 If you then want to update some part of the oscilloscope or restore settings, use the UPDATER button on the initial boot screen. (This option is enabled in the firmware in the other settings menu)
 http://www.youtube.com/watch?v=3iCg5SM3Y_8
