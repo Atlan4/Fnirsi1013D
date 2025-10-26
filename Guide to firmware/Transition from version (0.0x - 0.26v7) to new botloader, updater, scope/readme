@@ -2,5 +2,7 @@ If you have an older version of alternative firmware installed (ideally v0.26v t
 Then turn on the oscilloscope and select the UPDATE option.
 The program will start, which allows you to move-copy files to the oscilloscope's SD card. And from there, upload them to the oscilloscope's SD card using the UPLOAD button.
 
+http://www.youtube.com/watch?v=3iCg5SM3Y_8
+
 File data.cal - use the download button to save the input divider calibration to the SD card for backup and restore if necessary (use the upload button)
 File TP&screen.bin - use the download button to save the TP and screen settings to the SD card for backup and restore if necessary (use the upload button)
