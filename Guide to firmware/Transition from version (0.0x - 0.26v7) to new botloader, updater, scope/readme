@@ -1,5 +1,6 @@
-If you have an older version of alternative firmware installed  -update to version 0.26v (ideally v0.26v to 0.26v7). Use the loader 1.1.3 program and upload the fnirsi_1013d migration.bin firmware to the oscilloscope.
+If you have an older version of alternative firmware installed  -update to version 0.26v (ideally v0.26v to 0.26v7). Use the loader 1.1.3 program and upload the fnirsi_1013d_migration.bin firmware to the oscilloscope.
 BEFORE that, it is MANDATORY to ENABLE booting with the option to select the startup (PECO, FEL mode, FNIRSI) in the oscilloscope menu.
+After setting, turn the oscilloscope off and on again to see if it starts with the menu selection
 https://www.eevblog.com/forum/testgear/fnirsi-1013d-100mhz-tablet-oscilloscope/msg6081693/#msg6081693
 
 Then turn on the oscilloscope and select the UPDATE option.
