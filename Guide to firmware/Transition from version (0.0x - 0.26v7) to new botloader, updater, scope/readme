@@ -12,6 +12,7 @@ File data.cal - use the download button to save the input divider calibration to
 File TP&screen.bin - use the download button to save the TP and screen settings to the SD card for backup and restore if necessary (use the upload button)
 
 Copy the updater.bmp image directly to the SD card
+Copy the scope.bmp image directly to the SD card
 
 
 fnirsi_1013d_migration v0.2.bin- bootloader v0.7, updater v0.02l, scope v0.26y2
