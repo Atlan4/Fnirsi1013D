@@ -1,0 +1,9 @@
+#ifndef BUILD_TIME_H
+#define BUILD_TIME_H
+#define COMPILE_YEAR 25
+#define COMPILE_MONTH 11
+#define COMPILE_DAY 19
+#define COMPILE_HOUR 15
+#define COMPILE_MIN 30
+#define COMPILE_SEC 56
+#endif
