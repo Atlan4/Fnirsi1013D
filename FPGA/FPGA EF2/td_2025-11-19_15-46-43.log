@@ -1,0 +1,710 @@
+============================================================
+   Tang Dynasty, V4.6.116866
+   Copyright (c) 2012-2024 Anlogic
+   Executable = /home/dk/Downloads/TD_5.0.3_28716_NL_Linux/TD_5.0.3_28716_NL/bin/td
+   Built by =   dk
+   Built at =   2024, jún 20
+   Run by =     dk
+   Run Date =   Wed Nov 19 15:46:43 2025
+
+   Run on =     dk-HP-250-G8-Notebook-PC
+============================================================
+RUN-1002 : start command "open_project FPGA.al"
+HDL-1007 : analyze verilog file zaklad.v
+HDL-1007 : analyze verilog file al_ip/pll.v
+HDL-1007 : analyze verilog file al_ip/sample_memory.v
+RUN-1002 : start command "import_device ef2_4.db -package EF2L45LG144B"
+ARC-1001 : Device Initialization.
+ARC-1001 : ---------------------------------------------------------
+ARC-1001 :       OPTION       |          IO           |   SETTING   
+ARC-1001 : ---------------------------------------------------------
+ARC-1001 :        done        |         P109          |    gpio    
+ARC-1001 :        initn       |         P110          |    gpio    
+ARC-1001 :       jtagen       |         P120          |    gpio    
+ARC-1001 :      programn      |         P119          |  dedicated  
+ARC-1001 :   tdi/tms/tck/tdo  |  P136/P130/P131/P137  |  dedicated  
+ARC-1001 : ---------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+HDL-1007 : analyze verilog file zaklad.v
+HDL-1007 : analyze verilog file al_ip/pll.v
+HDL-1007 : analyze verilog file al_ip/sample_memory.v
+RUN-1002 : start command "elaborate -top fnirsi_1013D"
+HDL-1007 : elaborate module fnirsi_1013D in zaklad.v(66)
+HDL-1007 : elaborate module pll in al_ip/pll.v(23)
+HDL-1007 : elaborate module EF2_PHY_PLL(FIN="50.000000",FBCLK_DIV=20,CLKC0_DIV=5,CLKC1_DIV=5,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",FEEDBK_MODE="NOCOMP",STDBY_ENABLE="DISABLE",CLKC1_FPHASE=2,CLKC0_CPHASE=4,CLKC1_CPHASE=5,GMC_GAIN=4,ICP_CURRENT=13,KVCO=4,LPF_CAPACITOR=1,LPF_RESISTOR=4,SYNC_ENABLE="DISABLE",OFFSET_MODE="EXT",CLKC0_DUTY=0.5,CLKC1_DUTY=0.5,CLKC0_DUTY_INT=3,CLKC1_DUTY_INT=3) in /home/dk/Downloads/TD_5.0.3_28716_NL_Linux/TD_5.0.3_28716_NL/arch/ef2_macro.v(2694)
+HDL-1007 : elaborate module clockdivider(WIDTH=1,LAST=1) in zaklad.v(8)
+HDL-1007 : elaborate module clockdivider(WIDTH=16,LAST=24999) in zaklad.v(8)
+HDL-1007 : elaborate module pwmcounter(LAST=1999) in zaklad.v(37)
+HDL-1007 : elaborate module pwmcounter(LAST=59999) in zaklad.v(37)
+HDL-1007 : elaborate module sample_memory in al_ip/sample_memory.v(14)
+HDL-1007 : elaborate module EF2_LOGIC_BRAM(DATA_WIDTH_A=32,DATA_WIDTH_B=32,ADDR_WIDTH_A=13,ADDR_WIDTH_B=13,DATA_DEPTH_A=6143,DATA_DEPTH_B=6143,MODE="PDPW",IMPLEMENT="32K") in /home/dk/Downloads/TD_5.0.3_28716_NL_Linux/TD_5.0.3_28716_NL/arch/ef2_macro.v(2846)
+HDL-5007 WARNING: actual bit length 2 differs from formal bit length 1 for port 'beb' in al_ip/sample_memory.v(60)
+HDL-1200 : Current top model is fnirsi_1013D
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "read_adc zaklad.adc"
+RUN-1002 : start command "set_pin_assignment  i_adc1A_d[0]   LOCATION = P35; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc1A_d[1]   LOCATION = P34; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc1A_d[2]   LOCATION = P33; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc1A_d[3]   LOCATION = P32; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc1A_d[4]   LOCATION = P31; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc1A_d[5]   LOCATION = P28; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc1A_d[6]   LOCATION = P27; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc1A_d[7]   LOCATION = P26; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc1B_d[0]   LOCATION = P38; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc1B_d[1]   LOCATION = P39; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc1B_d[2]   LOCATION = P40; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc1B_d[3]   LOCATION = P41; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc1B_d[4]   LOCATION = P42; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc1B_d[5]   LOCATION = P43; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc1B_d[6]   LOCATION = P44; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc1B_d[7]   LOCATION = P45; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc2A_d[0]   LOCATION = P62; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc2A_d[1]   LOCATION = P61; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc2A_d[2]   LOCATION = P60; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc2A_d[3]   LOCATION = P59; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc2A_d[4]   LOCATION = P58; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc2A_d[5]   LOCATION = P57; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc2A_d[6]   LOCATION = P56; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc2A_d[7]   LOCATION = P55; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc2B_d[0]   LOCATION = P73; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc2B_d[1]   LOCATION = P74; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc2B_d[2]   LOCATION = P75; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc2B_d[3]   LOCATION = P76; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc2B_d[4]   LOCATION = P77; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc2B_d[5]   LOCATION = P78; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc2B_d[6]   LOCATION = P81; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_adc2B_d[7]   LOCATION = P82; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_mcu_clk   LOCATION = P105; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_mcu_rws   LOCATION = P106; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_mcu_dcs   LOCATION = P107; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  i_xtal   LOCATION = P128; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  io_mcu_data[0]   LOCATION = P95; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  io_mcu_data[1]   LOCATION = P96; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  io_mcu_data[2]   LOCATION = P97; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  io_mcu_data[3]   LOCATION = P98; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  io_mcu_data[4]   LOCATION = P99; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  io_mcu_data[5]   LOCATION = P100; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  io_mcu_data[6]   LOCATION = P103; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  io_mcu_data[7]   LOCATION = P104; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; "
+RUN-1002 : start command "set_pin_assignment  o_ac_dc_1   LOCATION = P92; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  o_ac_dc_2   LOCATION = P93; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  o_adc1_encA   LOCATION = P25; IOSTANDARD = LVCMOS33; SLEWRATE = FAST; "
+RUN-1002 : start command "set_pin_assignment  o_adc1_encB   LOCATION = P47; IOSTANDARD = LVCMOS33; SLEWRATE = FAST; "
+RUN-1002 : start command "set_pin_assignment  o_adc2_encA   LOCATION = P54; IOSTANDARD = LVCMOS33; SLEWRATE = FAST; "
+RUN-1002 : start command "set_pin_assignment  o_adc2_encB   LOCATION = P83; IOSTANDARD = LVCMOS33; SLEWRATE = FAST; "
+RUN-1002 : start command "set_pin_assignment  o_offset_1   LOCATION = P50; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  o_offset_2   LOCATION = P52; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  o_pwm_display   LOCATION = P4; IOSTANDARD = LVCMOS33; "
+RUN-1002 : start command "set_pin_assignment  o_relay1_1   LOCATION = P84; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  o_relay1_2   LOCATION = P85; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  o_relay1_3   LOCATION = P87; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  o_relay2_1   LOCATION = P91; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  o_relay2_2   LOCATION = P86; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  o_relay2_3   LOCATION = P89; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; "
+RUN-1002 : start command "set_pin_assignment  o_1khz_calib   LOCATION = P94; IOSTANDARD = LVCMOS33; PULLTYPE = NONE; SLEWRATE = FAST; "
+RUN-1001 : Starting of IO vref setups legality check.
+RUN-1001 : Starting of IO vref setups legality check.
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file /home/dk/Downloads/TD_5.0.3_28716_NL_Linux/TD_5.0.3_28716_NL/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "fnirsi_1013D"
+SYN-1012 : SanityCheck: Model "clockdivider(WIDTH=16,LAST=24999)"
+SYN-1012 : SanityCheck: Model "pwmcounter(LAST=1999)"
+SYN-1012 : SanityCheck: Model "pwmcounter(LAST=59999)"
+SYN-1012 : SanityCheck: Model "pll"
+SYN-1012 : SanityCheck: Model "clockdivider(WIDTH=1,LAST=1)"
+SYN-1012 : SanityCheck: Model "sample_memory"
+SYN-1043 : Mark pll as IO macro for instance pll_inst
+SYN-1016 : Merged 1 instances.
+SYN-1011 : Flatten model fnirsi_1013D
+SYN-1011 : Flatten model clockdivider(WIDTH=16,LAST=24999)
+SYN-1011 : Flatten model pwmcounter(LAST=1999)
+SYN-1011 : Flatten model pwmcounter(LAST=59999)
+SYN-1011 : Flatten model pll
+SYN-1011 : Flatten model clockdivider(WIDTH=1,LAST=1)
+SYN-1011 : Flatten model sample_memory
+SYN-1016 : Merged 13 instances.
+SYN-1014 : Optimize round 1
+SYN-1018 : Transformed 1 mux instances.
+SYN-1019 : Optimized 1 mux instances.
+SYN-1021 : Optimized 334 onehot mux instances.
+SYN-1020 : Optimized 188 distributor mux.
+SYN-1016 : Merged 311 instances.
+SYN-1015 : Optimize round 1, 1217 better
+SYN-1014 : Optimize round 2
+SYN-1032 : 1273/441 useful/useless nets, 1017/369 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 2, 398 better
+SYN-1014 : Optimize round 3
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 3, 0 better
+RUN-1002 : start command "report_area -file FPGA_rtl.area"
+RUN-1001 : standard
+***Report Model: fnirsi_1013D***
+
+IO Statistics
+#IO                    60
+  #input               36
+  #output              16
+  #inout                8
+
+Gate Statistics
+#Basic gates          852
+  #and                223
+  #nand                 0
+  #or                 176
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                 17
+  #bufif1               8
+  #MX21                19
+  #FADD                 0
+  #DFF                409
+  #LATCH                0
+#MACRO_ADD             24
+#MACRO_EQ              52
+#MACRO_MUX             73
+
+RUN-1001 : 
+Report Hierarchy Area:
++-----------------------------------------------+
+|Instance |Module       |gates  |seq    |macros |
++-----------------------------------------------+
+|top      |fnirsi_1013D |443    |409    |77     |
++-----------------------------------------------+
+
+RUN-1002 : start command "read_sdc zaklad.sdc"
+RUN-1002 : start command "get_nets clk_200MHz"
+RUN-1002 : start command "create_clock -name clk_200MHz -period 5 -waveform 0 2 "
+RUN-1102 : create_clock: clock name: clk_200MHz, type: 0, period: 5000, rise: 0, fall: 2000.
+RUN-1002 : start command "get_ports i_xtal"
+RUN-1002 : start command "create_clock -name i_xtal -period 20 -waveform 0 10 "
+RUN-1102 : create_clock: clock name: i_xtal, type: 0, period: 20000, rise: 0, fall: 10000.
+RUN-1002 : start command "get_clocks i_xtal"
+RUN-1002 : start command "set_clock_latency -source 1 "
+RUN-1104 : Import SDC file zaklad.sdc finished, there are 1 nets kept by constraints.
+RUN-1002 : start command "export_db FPGA_rtl.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "optimize_gate -packarea FPGA_gate.area"
+RUN-1001 : Open license file /home/dk/Downloads/TD_5.0.3_28716_NL_Linux/TD_5.0.3_28716_NL/license/Anlogic.lic
+SYN-2001 : Map 60 IOs to PADs
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2512 : LOGIC BRAM "samples/inst"
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1016 : Merged 12 instances.
+SYN-2571 : Optimize after map_dsp, round 1, 12 better
+SYN-2571 : Optimize after map_dsp, round 2
+SYN-2571 : Optimize after map_dsp, round 2, 0 better
+SYN-2501 : Optimize round 1
+SYN-1016 : Merged 254 instances.
+SYN-2501 : Optimize round 1, 611 better
+SYN-2501 : Optimize round 2
+SYN-2501 : Optimize round 2, 0 better
+SYN-2501 : Map 24 macro adder
+SYN-1032 : 2058/1 useful/useless nets, 1736/0 useful/useless insts
+RUN-1002 : start command "start_timer -prepack"
+TMR-2505 : Start building timing graph for model fnirsi_1013D.
+TMR-2506 : Build timing graph completely. Port num: 25, tpin num: 7121, tnet num: 2064, tinst num: 1726, tnode num: 12526, tedge num: 13269.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 85 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 2064 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3001 : Initiate 2 clocks from SDC.
+TMR-3004 : Start mapping sdc constraints, there are 0 constraints in total.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+SYN-3001 : Running gate level optimization.
+SYN-2581 : Mapping with K=5, #lut = 273 (4.11), #lev = 8 (2.58)
+SYN-2551 : Post LUT mapping optimization.
+SYN-3001 : Logic optimization runtime opt =   0.09 sec, map =   0.00 sec
+SYN-3001 : Mapper mapped 854 instances into 286 LUTs, name keeping = 59%.
+SYN-3001 : Mapper removed 3 lut buffers
+SYN-1001 : Packing model "fnirsi_1013D" ...
+SYN-4010 : Pack lib has 48 rtl pack models with 21 top pack blocks
+SYN-1014 : Optimize round 1
+SYN-1015 : Optimize round 1, 0 better
+SYN-4002 : Packing 398 DFF/LATCH to SEQ ...
+SYN-4009 : Pack 11 carry chain into lslice
+SYN-4007 : Packing 192 adder to BLE ...
+SYN-4008 : Packed 192 adder and 8 SEQ to BLE.
+SYN-4007 : Packing 0 gate4 to BLE ...
+SYN-4008 : Packed 0 gate4 and 0 SEQ to BLE.
+SYN-4012 : Packed 0 FxMUX
+SYN-4007 : Packing 0 MUX to BLE ...
+SYN-4008 : Packed 0 MUX and 0 SEQ to BLE.
+SYN-4007 : Packing 283 LUT to BLE ...
+SYN-4008 : Packed 283 LUT and 64 SEQ to BLE.
+SYN-4003 : Packing 326 remaining SEQ's ...
+SYN-4004 : #0: Packed 0 SEQ (326 nodes)...
+SYN-4004 : #1: Packed 85 SEQ (5238 nodes)...
+SYN-4005 : Packed 85 SEQ with LUT/SLICE
+SYN-4006 : 151 single LUT's are left
+SYN-4006 : 241 single SEQ's are left
+SYN-4011 : Packing model "fnirsi_1013D" (AL_USER_NORMAL) with 524/751 primitive instances ...
+RUN-1002 : start command "report_area -file FPGA_gate.area"
+RUN-1001 : standard
+***Report Model: fnirsi_1013D***
+
+IO Statistics
+#IO                    60
+  #input               36
+  #output              16
+  #inout                8
+
+Utilization Statistics
+#lut                  626   out of   4480   13.97%
+#reg                  398   out of   4480    8.88%
+#le                   861
+  #lut only           463   out of    861   53.77%
+  #reg only           235   out of    861   27.29%
+  #lut&reg            163   out of    861   18.93%
+#dsp                    0   out of     15    0.00%
+#bram                   0   out of     12    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                6   out of      6  100.00%
+#pad                   60   out of    109   55.05%
+  #ireg                 0
+  #oreg                13
+  #treg                 0
+#pll                    1   out of      1  100.00%
+#gclk                   0   out of     16    0.00%
+
+RUN-1001 : 
+Report Hierarchy Area:
++--------------------------------------------+
+|Instance |Module       |le    |lut   |seq   |
++--------------------------------------------+
+|top      |fnirsi_1013D |861   |626   |398   |
++--------------------------------------------+
+
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1011 : Flatten model fnirsi_1013D
+RUN-1002 : start command "read_sdc zaklad.sdc"
+RUN-1002 : start command "get_nets clk_200MHz"
+RUN-1002 : start command "create_clock -name clk_200MHz -period 5 -waveform 0 2 "
+RUN-1102 : create_clock: clock name: clk_200MHz, type: 0, period: 5000, rise: 0, fall: 2000.
+RUN-1002 : start command "get_ports i_xtal"
+RUN-1002 : start command "create_clock -name i_xtal -period 20 -waveform 0 10 "
+RUN-1102 : create_clock: clock name: i_xtal, type: 0, period: 20000, rise: 0, fall: 10000.
+RUN-1002 : start command "get_clocks i_xtal"
+RUN-1002 : start command "set_clock_latency -source 1 "
+RUN-1104 : Import SDC file zaklad.sdc finished, there are 1 nets kept by constraints.
+RUN-1002 : start command "export_db FPGA_gate.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "place"
+RUN-1001 : Open license file /home/dk/Downloads/TD_5.0.3_28716_NL_Linux/TD_5.0.3_28716_NL/license/Anlogic.lic
+PHY-3001 : Placer runs in 8 thread(s).
+RUN-1002 : start command "legalize_phy_inst"
+SYN-1011 : Flatten model fnirsi_1013D
+SYN-4027 : Net clk_200MHz is clkc0 of pll main_clock/pll_inst.
+SYN-4027 : Net clk_RAM is clkc1 of pll main_clock/pll_inst.
+SYN-4019 : Net i_xtal_pad is refclk of pll main_clock/pll_inst.
+SYN-4024 : Net "i_mcu_clk_pad" drive clk pins.
+SYN-4024 : Net "sample_write_clock" drive clk pins.
+SYN-4024 : Net "clk_50MHz" drive clk pins.
+SYN-4025 : Tag rtl::Net clk_200MHz as clock net
+SYN-4025 : Tag rtl::Net clk_50MHz as clock net
+SYN-4025 : Tag rtl::Net clk_RAM as clock net
+SYN-4025 : Tag rtl::Net i_mcu_clk_pad as clock net
+SYN-4025 : Tag rtl::Net i_xtal_pad as clock net
+SYN-4025 : Tag rtl::Net sample_write_clock as clock net
+SYN-4026 : Tagged 6 rtl::Net as clock net
+SYN-4015 : Create BUFG instance for clk Net i_mcu_clk_pad to drive 145 clock pins.
+SYN-4015 : Create BUFG instance for clk Net sample_write_clock to drive 56 clock pins.
+SYN-4015 : Create BUFG instance for clk Net clk_50MHz to drive 40 clock pins.
+PHY-1001 : Populate physical database.
+RUN-1001 : There are total 518 instances
+RUN-1001 : 222 mslices, 223 lslices, 60 pads, 6 brams, 0 dsps
+RUN-1001 : There are total 1160 nets
+RUN-1001 : 742 nets have 2 pins
+RUN-1001 : 283 nets have [3 - 5] pins
+RUN-1001 : 90 nets have [6 - 10] pins
+RUN-1001 : 23 nets have [11 - 20] pins
+RUN-1001 : 20 nets have [21 - 99] pins
+RUN-1001 : 2 nets have 100+ pins
+PHY-3001 : Initial placement ...
+PHY-3001 : design contains 516 instances, 445 slices, 23 macros(156 instances)
+PHY-3001 : Start timing update ...
+RUN-1002 : start command "start_timer"
+TMR-2505 : Start building timing graph for model fnirsi_1013D.
+TMR-2506 : Build timing graph completely. Port num: 25, tpin num: 4272, tnet num: 1158, tinst num: 516, tnode num: 5233, tedge num: 7165.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 43 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+TMR-2503 : Start to update net delay, extr mode = 2.
+TMR-2504 : Update delay of 1158 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 2.
+TMR-3001 : Initiate 2 clocks from SDC.
+TMR-3004 : Start mapping sdc constraints, there are 0 constraints in total.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+PHY-3001 : End timing update;  0.063910s wall, 0.070000s user + 0.000000s system = 0.070000s CPU (109.5%)
+
+PHY-3001 : Global placement ...
+PHY-3001 : Initial: Len = 175012
+PHY-3001 : Run with size of 3
+PHY-3001 : Cell area utilization is 19%, beta_incr = 0.880804
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0
+PHY-3002 : Step(1): len = 149018, overlap = 27
+PHY-3002 : Step(2): len = 126916, overlap = 27
+PHY-3002 : Step(3): len = 118759, overlap = 27
+PHY-3002 : Step(4): len = 108269, overlap = 27
+PHY-3002 : Step(5): len = 97423.9, overlap = 27
+PHY-3002 : Step(6): len = 88247.8, overlap = 27
+PHY-3002 : Step(7): len = 79709.1, overlap = 27
+PHY-3002 : Step(8): len = 71010.5, overlap = 28
+PHY-3002 : Step(9): len = 62806.2, overlap = 29
+PHY-3002 : Step(10): len = 56159.4, overlap = 30.5
+PHY-3002 : Step(11): len = 48730.4, overlap = 33.75
+PHY-3002 : Step(12): len = 43266.9, overlap = 37
+PHY-3002 : Step(13): len = 37255.9, overlap = 42.25
+PHY-3002 : Step(14): len = 32826.2, overlap = 46.75
+PHY-3002 : Step(15): len = 28899.3, overlap = 51.75
+PHY-3002 : Step(16): len = 24994.3, overlap = 54.5
+PHY-3002 : Step(17): len = 24091.1, overlap = 57
+PHY-3002 : Step(18): len = 22457.2, overlap = 57.5
+PHY-3001 : :::1::: Try harder cell spreading with beta_ = 3.19607e-06
+PHY-3002 : Step(19): len = 24285.1, overlap = 61.25
+PHY-3002 : Step(20): len = 26716.1, overlap = 61.25
+PHY-3002 : Step(21): len = 26727.1, overlap = 57.5
+PHY-3002 : Step(22): len = 26579.4, overlap = 57.5
+PHY-3002 : Step(23): len = 25233.8, overlap = 57.5
+PHY-3002 : Step(24): len = 24797.5, overlap = 56.75
+PHY-3002 : Step(25): len = 25949.7, overlap = 51.5
+PHY-3002 : Step(26): len = 26920.2, overlap = 50
+PHY-3002 : Step(27): len = 26300.6, overlap = 48
+PHY-3002 : Step(28): len = 26083.7, overlap = 47.25
+PHY-3002 : Step(29): len = 26383.8, overlap = 45.75
+PHY-3002 : Step(30): len = 26287.2, overlap = 45.5
+PHY-3002 : Step(31): len = 25573.9, overlap = 43
+PHY-3002 : Step(32): len = 26260.7, overlap = 41.25
+PHY-3002 : Step(33): len = 26611.1, overlap = 40.25
+PHY-3002 : Step(34): len = 26485.2, overlap = 38.5
+PHY-3002 : Step(35): len = 25769, overlap = 36.5
+PHY-3001 : :::2::: Try harder cell spreading with beta_ = 6.39213e-06
+PHY-3002 : Step(36): len = 26430.7, overlap = 36.25
+PHY-3002 : Step(37): len = 26904, overlap = 36.5
+PHY-3002 : Step(38): len = 26904, overlap = 36.5
+PHY-3001 : :::3::: Try harder cell spreading with beta_ = 1.27843e-05
+PHY-3002 : Step(39): len = 28854.4, overlap = 25.75
+PHY-3002 : Step(40): len = 29216.1, overlap = 30.5
+PHY-3002 : Step(41): len = 29394.2, overlap = 25.75
+PHY-3002 : Step(42): len = 29471.7, overlap = 26
+PHY-3002 : Step(43): len = 29507.8, overlap = 25.5
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.003473s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-3001 : Run with size of 3
+PHY-3001 : Cell area utilization is 24%, beta_incr = 0.880804
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 6.29949e-07
+PHY-3002 : Step(44): len = 33851.6, overlap = 26.75
+PHY-3002 : Step(45): len = 33582.5, overlap = 27.5
+PHY-3002 : Step(46): len = 33313.2, overlap = 27
+PHY-3002 : Step(47): len = 33224, overlap = 26.75
+PHY-3002 : Step(48): len = 33229.8, overlap = 26.75
+PHY-3001 : :::1::: Try harder cell spreading with beta_ = 1.2599e-06
+PHY-3002 : Step(49): len = 33162.9, overlap = 26.75
+PHY-3002 : Step(50): len = 33162.9, overlap = 26.75
+PHY-3001 : :::2::: Try harder cell spreading with beta_ = 2.5198e-06
+PHY-3002 : Step(51): len = 33109.9, overlap = 26.75
+PHY-3002 : Step(52): len = 33150.9, overlap = 26.75
+PHY-3001 : Run with size of 1
+PHY-3001 : Cell area utilization is 24%, beta_incr = 0.880804
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 6.7449e-06
+PHY-3002 : Step(53): len = 33152.1, overlap = 49.5
+PHY-3002 : Step(54): len = 33230.7, overlap = 50.5
+PHY-3001 : :::1::: Try harder cell spreading with beta_ = 1.34898e-05
+PHY-3002 : Step(55): len = 33259.8, overlap = 50.25
+PHY-3002 : Step(56): len = 33378.2, overlap = 49.75
+PHY-3001 : :::2::: Try harder cell spreading with beta_ = 1.95225e-05
+PHY-3002 : Step(57): len = 33484.9, overlap = 49.75
+PHY-3002 : Step(58): len = 34161.6, overlap = 48
+PHY-3002 : Step(59): len = 34837.8, overlap = 46.75
+PHY-3002 : Step(60): len = 35370.5, overlap = 46
+PHY-3002 : Step(61): len = 35630.8, overlap = 43.75
+PHY-3001 : :::3::: Try harder cell spreading with beta_ = 3.90451e-05
+PHY-3002 : Step(62): len = 35633.6, overlap = 43.75
+PHY-3002 : Step(63): len = 35671.5, overlap = 42
+PHY-3002 : Step(64): len = 35767.1, overlap = 42
+PHY-3002 : Step(65): len = 36003.8, overlap = 41.25
+PHY-3002 : Step(66): len = 36072.5, overlap = 41.25
+PHY-3002 : Step(67): len = 36350.6, overlap = 40.5
+PHY-3001 : :::4::: Try harder cell spreading with beta_ = 7.80902e-05
+PHY-3002 : Step(68): len = 36812.3, overlap = 40
+PHY-3002 : Step(69): len = 37231.1, overlap = 40.25
+PHY-3002 : Step(70): len = 37488, overlap = 42.25
+PHY-3001 : :::5::: Try harder cell spreading with beta_ = 0.00015618
+PHY-3002 : Step(71): len = 37963.2, overlap = 40.5
+PHY-3002 : Step(72): len = 38674.7, overlap = 37.75
+PHY-3002 : Step(73): len = 39158.9, overlap = 37.25
+PHY-3002 : Step(74): len = 39305, overlap = 34.5
+PHY-3002 : Step(75): len = 39368, overlap = 34
+PHY-3002 : Step(76): len = 39425.6, overlap = 34
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.056535s wall, 0.030000s user + 0.070000s system = 0.100000s CPU (176.9%)
+
+PHY-3001 : Run with size of 1
+PHY-3001 : Cell area utilization is 24%, beta_incr = 0.880804
+PHY-3001 : :::0::: Try harder cell spreading with beta_ = 0.000217232
+PHY-3002 : Step(77): len = 42347.6, overlap = 6.5
+PHY-3002 : Step(78): len = 40997.7, overlap = 19.75
+PHY-3002 : Step(79): len = 40075.6, overlap = 26
+PHY-3002 : Step(80): len = 39731.2, overlap = 29.25
+PHY-3002 : Step(81): len = 39724.7, overlap = 32.5
+PHY-3002 : Step(82): len = 39751.1, overlap = 33.25
+PHY-3001 : :::1::: Try harder cell spreading with beta_ = 0.000411519
+PHY-3002 : Step(83): len = 40022.8, overlap = 32
+PHY-3002 : Step(84): len = 40385.3, overlap = 32.25
+PHY-3002 : Step(85): len = 40669.4, overlap = 31.25
+PHY-3001 : :::2::: Try harder cell spreading with beta_ = 0.000823038
+PHY-3002 : Step(86): len = 40872.1, overlap = 31.25
+PHY-3002 : Step(87): len = 41136.6, overlap = 30.5
+PHY-3002 : Step(88): len = 41349.3, overlap = 28.75
+PHY-3001 : Legalization ...
+PHY-3001 : End legalization;  0.031332s wall, 0.010000s user + 0.040000s system = 0.050000s CPU (159.6%)
+
+PHY-3001 : Legalized: Len = 43152, Over = 0
+PHY-3001 : Spreading special nets. 14 overflows in 750 tiles.
+PHY-3001 : 22 instances has been re-located, deltaX = 14, deltaY = 12.
+PHY-3001 : Final: Len = 43568, Over = 0
+RUN-1003 : finish command "place" in  1.168578s wall, 1.670000s user + 1.040000s system = 2.710000s CPU (231.9%)
+
+RUN-1004 : used memory is 74 MB, reserved memory is 97 MB, peak memory is 97 MB
+RUN-1002 : start command "route"
+RUN-1001 : Open license file /home/dk/Downloads/TD_5.0.3_28716_NL_Linux/TD_5.0.3_28716_NL/license/Anlogic.lic
+PHY-1001 : Pin misalignment score is improved from 382 to 334
+PHY-1001 : Pin misalignment score is improved from 334 to 333
+PHY-1001 : Pin misalignment score is improved from 333 to 332
+PHY-1001 : Pin misalignment score is improved from 332 to 332
+PHY-1001 : Route runs in 8 thread(s)
+RUN-1001 : There are total 518 instances
+RUN-1001 : 222 mslices, 223 lslices, 60 pads, 6 brams, 0 dsps
+RUN-1001 : There are total 1160 nets
+RUN-1001 : 742 nets have 2 pins
+RUN-1001 : 283 nets have [3 - 5] pins
+RUN-1001 : 90 nets have [6 - 10] pins
+RUN-1001 : 23 nets have [11 - 20] pins
+RUN-1001 : 20 nets have [21 - 99] pins
+RUN-1001 : 2 nets have 100+ pins
+PHY-1001 : Start global routing ...
+RUN-1001 : Generating global routing grids ...
+PHY-1001 : Generate routing nets ...
+PHY-1001 : Global iterations in 8 thread ...
+PHY-1002 : len = 78080, over cnt = 72(0%), over = 99, worst = 2
+PHY-1002 : len = 78824, over cnt = 30(0%), over = 38, worst = 2
+PHY-1002 : len = 78632, over cnt = 9(0%), over = 12, worst = 2
+PHY-1002 : len = 78512, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End global iterations;  0.125749s wall, 0.160000s user + 0.010000s system = 0.170000s CPU (135.2%)
+
+PHY-1001 : Pin swapping for better routability
+PHY-1001 : Pin local connectivity score is improved from 174 to 31
+PHY-1001 : End pin swap;  0.016455s wall, 0.020000s user + 0.000000s system = 0.020000s CPU (121.5%)
+
+PHY-1001 : End global routing;  0.378346s wall, 0.410000s user + 0.010000s system = 0.420000s CPU (111.0%)
+
+PHY-1001 : Start detail routing ...
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_200MHz will be routed on clock mesh
+PHY-1001 : clock net clk_50MHz_gclk_net will be merged with clock clk_50MHz
+PHY-1001 : net clk_RAM will be routed on clock mesh
+PHY-1001 : clock net i_mcu_clk_pad_gclk_net will be merged with clock i_mcu_clk_pad
+PHY-1001 : net i_xtal_pad will be routed on clock mesh
+PHY-1001 : clock net sample_write_clock_gclk_net will be merged with clock sample_write_clock
+PHY-1001 : Detail Route ...
+PHY-1001 : ===== Detail Route Phase 1 =====
+PHY-1001 : Routed 0% nets.
+PHY-1002 : len = 9536, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End Routed; 0.100369s wall, 0.110000s user + 0.000000s system = 0.110000s CPU (109.6%)
+
+PHY-1001 : ===== Detail Route Phase 2 =====
+PHY-1001 : Routed 2% nets.
+PHY-1002 : len = 11072, over cnt = 3(0%), over = 4, worst = 2
+PHY-1001 : End Routed; 0.055126s wall, 0.060000s user + 0.010000s system = 0.070000s CPU (127.0%)
+
+PHY-1001 : ===== DR Iter 1 =====
+PHY-1002 : len = 11056, over cnt = 2(0%), over = 2, worst = 1
+PHY-1001 : End DR Iter 1; 0.004546s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (220.0%)
+
+PHY-1001 : ===== DR Iter 2 =====
+PHY-1002 : len = 11056, over cnt = 2(0%), over = 2, worst = 1
+PHY-1001 : End DR Iter 2; 0.002606s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== DR Iter 3 =====
+PHY-1002 : len = 11056, over cnt = 2(0%), over = 2, worst = 1
+PHY-1001 : End DR Iter 3; 0.003484s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (287.0%)
+
+PHY-1001 : ===== DR Iter 4 =====
+PHY-1002 : len = 11056, over cnt = 2(0%), over = 2, worst = 1
+PHY-1001 : End DR Iter 4; 0.002487s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+PHY-1001 : ===== DR Iter 5 =====
+PHY-1002 : len = 11056, over cnt = 0(0%), over = 0, worst = 0
+PHY-1001 : End DR Iter 5; 0.002575s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (388.3%)
+
+PHY-1001 : ===== Detail Route Phase 3 =====
+PHY-1001 : Routed 43% nets.
+PHY-1001 : Routed 48% nets.
+PHY-1001 : Routed 56% nets.
+PHY-1001 : Routed 65% nets.
+PHY-1001 : Routed 82% nets.
+PHY-1002 : len = 119720, over cnt = 38(0%), over = 38, worst = 1
+PHY-1001 : End Routed; 1.335714s wall, 1.690000s user + 0.150000s system = 1.840000s CPU (137.8%)
+
+PHY-1001 : ===== DR Iter 1 =====
+PHY-1002 : len = 118840, over cnt = 11(0%), over = 11, worst = 1
+PHY-1001 : End DR Iter 1; 0.028223s wall, 0.030000s user + 0.010000s system = 0.040000s CPU (141.7%)
+
+PHY-1001 : ===== DR Iter 2 =====
+PHY-1002 : len = 118632, over cnt = 1(0%), over = 1, worst = 1
+PHY-1001 : End DR Iter 2; 0.016939s wall, 0.020000s user + 0.000000s system = 0.020000s CPU (118.1%)
+
+PHY-1001 : ===== DR Iter 3 =====
+PHY-1002 : len = 118616, over cnt = 0(0%), over = 0, worst = 0
+PHY-1003 : Routed, final wirelength = 118616
+PHY-1001 : End DR Iter 3; 0.009823s wall, 0.010000s user + 0.000000s system = 0.010000s CPU (101.8%)
+
+PHY-1001 : 0 feed throughs used by 0 nets
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_200MHz will be routed on clock mesh
+PHY-1001 : clock net clk_50MHz_gclk_net will be merged with clock clk_50MHz
+PHY-1001 : net clk_RAM will be routed on clock mesh
+PHY-1001 : clock net i_mcu_clk_pad_gclk_net will be merged with clock i_mcu_clk_pad
+PHY-1001 : net i_xtal_pad will be routed on clock mesh
+PHY-1001 : clock net sample_write_clock_gclk_net will be merged with clock sample_write_clock
+PHY-1001 : eco open net = 0
+PHY-1001 : End detail routing;  3.336575s wall, 3.700000s user + 0.220000s system = 3.920000s CPU (117.5%)
+
+PHY-1001 : Routing violations:
+PHY-1001 : End of Routing Violations.
+RUN-1003 : finish command "route" in  3.824671s wall, 4.230000s user + 0.230000s system = 4.460000s CPU (116.6%)
+
+RUN-1004 : used memory is 108 MB, reserved memory is 239 MB, peak memory is 239 MB
+RUN-1002 : start command "report_area -io_info -file FPGA_phy.area"
+RUN-1001 : standard
+***Report Model: fnirsi_1013D***
+
+IO Statistics
+#IO                    60
+  #input               36
+  #output              16
+  #inout                8
+
+Utilization Statistics
+#lut                  626   out of   4480   13.97%
+#reg                  398   out of   4480    8.88%
+#le                   861
+  #lut only           463   out of    861   53.77%
+  #reg only           235   out of    861   27.29%
+  #lut&reg            163   out of    861   18.93%
+#dsp                    0   out of     15    0.00%
+#bram                   0   out of     12    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                6   out of      6  100.00%
+#pad                   60   out of    109   55.05%
+  #ireg                 0
+  #oreg                13
+  #treg                 0
+#pll                    1   out of      1  100.00%
+#gclk                   3   out of     16   18.75%
+
+RUN-1001 : 
+
+RUN-1002 : start command "export_db FPGA_pr.db"
+RUN-1001 : Exported /
+RUN-1001 : Exported libs
+RUN-1001 : Exported entities
+RUN-1001 : Exported ports
+RUN-1001 : Exported pins
+RUN-1001 : Exported instances
+RUN-1001 : Exported nets
+RUN-1001 : Exported buses
+RUN-1001 : Exported models
+RUN-1001 : Exported congestions
+RUN-1001 : Exported violations
+RUN-1001 : Exported timing constraints
+RUN-1001 : Exported IO constraints
+RUN-1001 : Exported Inst constraints
+RUN-1001 : Exported flow parameters
+RUN-1002 : start command "start_timer"
+TMR-2505 : Start building timing graph for model fnirsi_1013D.
+TMR-2506 : Build timing graph completely. Port num: 25, tpin num: 4272, tnet num: 1158, tinst num: 516, tnode num: 5233, tedge num: 7165.
+TMR-2507 : Eliminate loop in the timing graph, delete 0 tedges.
+TMR-2508 : Levelizing timing graph completed, there are 43 levels in total.
+TMR-2501 : Timing graph initialized successfully.
+RUN-1002 : start command "report_timing -mode FINAL -net_info -ep_num 3 -path_num 3 -file FPGA_phy.timing"
+TMR-2503 : Start to update net delay, extr mode = 6.
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : Generate nets ...
+PHY-1001 : net clk_200MHz will be routed on clock mesh
+PHY-1001 : clock net clk_50MHz_gclk_net will be merged with clock clk_50MHz
+PHY-1001 : net clk_RAM will be routed on clock mesh
+PHY-1001 : clock net i_mcu_clk_pad_gclk_net will be merged with clock i_mcu_clk_pad
+PHY-1001 : net i_xtal_pad will be routed on clock mesh
+PHY-1001 : clock net sample_write_clock_gclk_net will be merged with clock sample_write_clock
+PHY-1001 : eco open net = 0
+TMR-2504 : Update delay of 1158 nets completely.
+TMR-2502 : Annotate delay completely, extr mode = 6.
+TMR-3001 : Initiate 2 clocks from SDC.
+TMR-3004 : Start mapping sdc constraints, there are 0 constraints in total.
+TMR-3005 : Start mapping report constraints, there are 0 constraints in total.
+TMR-3003 : Constraints initiated successfully.
+TMR-3501 : Forward propagation: start to calculate arrival time...
+TMR-3502 : Backward propagation: start to calculate required time...
+TMR-3503 : Timing propagation completes.
+TMR-3506 : Start to generate timing report.
+TMR-1502 : clock_nets size = 6, clk_num = 2.
+TMR-5009 WARNING: There are(is) 4 clock net(s) without clock constraint(s).
+TMR-3508 : Export timing summary.
+TMR-3507 : Timing report generated successfully in FPGA_phy.timing, timing summary in FPGA_phy.tsm.
+RUN-1002 : start command "bitgen -bit FPGA.bit -version 0X00 -g ucode:00000000000110100000000000000000 -bin FPGA.bin"
+BIT-1003 : Start to generate bitstream. 
+BIT-1002 : Init instances with 8 threads.
+BIT-1002 : Init instances completely, inst num: 518
+BIT-1002 : Init pips with 8 threads.
+BIT-1002 : Init pips completely, net num: 1160, pip num: 9750
+BIT-1003 : Multithreading accelaration with 8 threads.
+BIT-1003 : Generate bitstream completely, there are 652 valid insts, and 26771 bits set as '1'.
+BIT-1004 : Generate bits file FPGA.bit.
+BIT-1004 : Generate bin file FPGA.bin.
+TMR-3509 : Import timing summary.

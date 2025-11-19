@@ -1,0 +1,47 @@
+============================================================
+   Tang Dynasty, V4.6.116866
+   Copyright (c) 2012-2024 Anlogic
+   Executable = /home/dk/Downloads/TD_5.0.3_28716_NL_Linux/TD_5.0.3_28716_NL/bin/td
+   Built by =   dk
+   Built at =   2024, jún 20
+   Run by =     dk
+   Run Date =   Wed Nov 19 15:43:44 2025
+
+   Run on =     dk-HP-250-G8-Notebook-PC
+============================================================
+RUN-1002 : start command "import_device ef2_4.db -package EF2L45LG144B -basic"
+ARC-1001 : Device Initialization.
+ARC-1001 : ---------------------------------------------------------
+ARC-1001 :       OPTION       |          IO           |   SETTING   
+ARC-1001 : ---------------------------------------------------------
+ARC-1001 :        done        |         P109          |    gpio    
+ARC-1001 :        initn       |         P110          |    gpio    
+ARC-1001 :       jtagen       |         P120          |    gpio    
+ARC-1001 :      programn      |         P119          |  dedicated  
+ARC-1001 :   tdi/tms/tck/tdo  |  P136/P130/P131/P137  |  dedicated  
+ARC-1001 : ---------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "read_verilog -file al_ip/pll.v"
+HDL-1007 : analyze verilog file al_ip/pll.v
+HDL-1007 : elaborate module pll in al_ip/pll.v(23)
+HDL-1007 : elaborate module EF2_PHY_PLL(FIN="50.000000",FBCLK_DIV=20,CLKC0_DIV=5,CLKC1_DIV=5,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",FEEDBK_MODE="NOCOMP",STDBY_ENABLE="DISABLE",CLKC1_FPHASE=2,CLKC0_CPHASE=4,CLKC1_CPHASE=5,GMC_GAIN=4,ICP_CURRENT=13,KVCO=4,LPF_CAPACITOR=1,LPF_RESISTOR=4,SYNC_ENABLE="DISABLE",OFFSET_MODE="EXT",CLKC0_DUTY=0.5,CLKC1_DUTY=0.5,CLKC0_DUTY_INT=3,CLKC1_DUTY_INT=3) in /home/dk/Downloads/TD_5.0.3_28716_NL_Linux/TD_5.0.3_28716_NL/arch/ef2_macro.v(2694)
+HDL-1200 : Current top model is pll
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file /home/dk/Downloads/TD_5.0.3_28716_NL_Linux/TD_5.0.3_28716_NL/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "pll"
+SYN-1011 : Flatten model pll
+SYN-1014 : Optimize round 1
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 0 better
+RUN-1002 : start command "map_macro -nopad"
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 5/1 useful/useless nets, 3/1 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 5/1 useful/useless nets, 3/1 useful/useless insts
+SYN-2501 : Optimize round 1, 0 better
+SYN-1032 : 5/1 useful/useless nets, 3/1 useful/useless insts
+RUN-1002 : start command "write_verilog al_ip/pll_sim.v"
+HDL-1201 : write out verilog file al_ip/pll_sim.v
