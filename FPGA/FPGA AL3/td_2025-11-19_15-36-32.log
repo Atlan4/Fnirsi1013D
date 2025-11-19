@@ -1,0 +1,16 @@
+============================================================
+   Tang Dynasty, V4.6.116866
+   Copyright (c) 2012-2024 Anlogic
+   Executable = /home/dk/Downloads/TD_5.0.3_28716_NL_Linux/TD_5.0.3_28716_NL/bin/td
+   Built by =   dk
+   Built at =   2024, jún 20
+   Run by =     dk
+   Run Date =   Wed Nov 19 15:36:32 2025
+
+   Run on =     dk-HP-250-G8-Notebook-PC
+============================================================
+RUN-1002 : start command "open_project FPGA.al"
+HDL-1007 : analyze verilog file zaklad.v
+HDL-1007 : analyze verilog file al_ip/pll.v
+HDL-1007 : analyze verilog file al_ip/sample_memory.v
+RUN-1002 : start command "import_device al3_10.db -package LQFP144"
