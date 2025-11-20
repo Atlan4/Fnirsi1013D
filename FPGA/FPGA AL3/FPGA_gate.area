@@ -1,0 +1,34 @@
+standard
+***Report Model: fnirsi_1013D***
+
+IO Statistics
+#IO                    60
+  #input               36
+  #output              16
+  #inout                8
+
+Utilization Statistics
+#lut                  771   out of   8640    8.92%
+#reg                  399   out of   8640    4.62%
+#le                   780
+  #lut only           381   out of    780   48.85%
+  #reg only             9   out of    780    1.15%
+  #lut&reg            390   out of    780   50.00%
+#dsp                    0   out of      3    0.00%
+#bram                  29   out of     48   60.42%
+  #bram9k              29
+  #fifo9k               0
+#bram32k                0   out of      2    0.00%
+#pad                   60   out of     93   64.52%
+  #ireg                 0
+  #oreg                13
+  #treg                 0
+#pll                    1   out of      2   50.00%
+#gclk                   0   out of     16    0.00%
+
+Report Hierarchy Area:
++--------------------------------------------+
+|Instance |Module       |le    |lut   |seq   |
++--------------------------------------------+
+|top      |fnirsi_1013D |780   |771   |399   |
++--------------------------------------------+
