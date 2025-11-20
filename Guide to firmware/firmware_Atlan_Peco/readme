@@ -1,5 +1,18 @@
 No one is responsible for anything, you do everything at your own risk.
 
 If you have an UPDATER version lower than 0.02l you must use updater.bin. Only then can you start using *.bin files with the file version designation.
+
+If you then want to update some part of the oscilloscope or restore settings, use the UPDATER button on the initial boot screen. (This option is enabled in the firmware in the other settings menu)
+http://www.youtube.com/watch?v=3iCg5SM3Y_8
+https://github.com/Atlan4/Fnirsi1013D/tree/main/Guide%20to%20firmware/Transition%20from%20version%20(0.0x%20-%200.26v7)%20to%20new%20botloader%2C%20updater%2C%20scope/firmware_Atlan_Peco
+
+Then turn on the oscilloscope and select the UPDATE option.
+The program will start, which allows you to move-copy files to the oscilloscope's SD card. And from there, upload them to the oscilloscope's SD card using the UPLOAD button.
+
+File data.cal - use the download button to save the input divider calibration to the SD card for backup and restore if necessary (use the upload button)
+File TP&screen.bin - use the download button to save the TP and screen settings to the SD card for backup and restore if necessary (use the upload button)
+
 Copy the updater.bmp image directly to the SD card
 Copy the scope.bmp image directly to the SD card
+
+
