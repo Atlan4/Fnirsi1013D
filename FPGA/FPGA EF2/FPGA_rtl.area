@@ -1,0 +1,34 @@
+standard
+***Report Model: fnirsi_1013D***
+
+IO Statistics
+#IO                    60
+  #input               36
+  #output              16
+  #inout                8
+
+Gate Statistics
+#Basic gates          852
+  #and                223
+  #nand                 0
+  #or                 176
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                 17
+  #bufif1               8
+  #MX21                19
+  #FADD                 0
+  #DFF                409
+  #LATCH                0
+#MACRO_ADD             24
+#MACRO_EQ              52
+#MACRO_MUX             73
+
+Report Hierarchy Area:
++-----------------------------------------------+
+|Instance |Module       |gates  |seq    |macros |
++-----------------------------------------------+
+|top      |fnirsi_1013D |443    |409    |77     |
++-----------------------------------------------+
