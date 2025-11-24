@@ -1,0 +1,193 @@
+//================================ FPGA commands table ==================================
+
+//***************************************************************************************
+//********************************** READING commands ***********************************
+//***************************************************************************************
+
+            8'h05: //Reading of the sampling system resets state
+                    o_mcu_data[0] <= sample_system_state;
+//---------------------------------------------------------------------------------------
+            8'h06: //Reading of the FPGA version needs loading of high byte first
+                  4'h0:
+                    o_mcu_data <= 8'h14;
+                  4'h1:
+                    o_mcu_data <= 8'h32;
+            
+            //When sampling finishes the writing is disabled. Enabled again with a reset.
+            8'h0A: //Reading of the sampling done state
+                    o_mcu_data[0] <= ~sample_write_enable;
+
+            8'h14: //Reading of the trigger address needs loading of high byte first
+                  4'h0:
+                    o_mcu_data <= trigger_address[12:8];
+                  4'h1:
+                    o_mcu_data <= trigger_address[7:0];
+            
+            //This is not used in the software and is basically the same as command 0x0A
+            8'h18: //Reading of the sampling triggered state
+                    o_mcu_data[0] <= sampling_triggered;
+              
+	    8'h1F //Loading two bytes of the data read address offset high byte first
+                  4'h0:
+		    sample_read_offset[12:8] <= io_mcu_data[4:0];
+		  4'h1:
+		    sample_read_offset[7:0] <= io_mcu_data;
+            
+            8'h20: //Reading of the sample data for channel 1 ADC 1 from memory
+              o_mcu_data <= o_adc1A_d;
+        
+            8'h21: //Reading of the sample data for channel 1 ADC 2 from memory
+              o_mcu_data <= o_adc1B_d;
+          
+            8'h22: //Reading of the sample data for channel 2 ADC 1 from memory
+              o_mcu_data <= o_adc2A_d;
+          
+            8'h23: //Reading of the sample data for channel 2 ADC 2 from memory
+              o_mcu_data <= o_adc2B_d;
+           
+            8'h24: //Reading of the sample data for channel 1 ADC 1
+              o_mcu_data <= i_adc1A_d;
+            
+            8'h25: //Reading of the sample data for channel 1 ADC 2
+              o_mcu_data <= i_adc1B_d;
+            
+            8'h26: //Reading of the sample data for channel 2 ADC 1
+              o_mcu_data <= i_adc2A_d;
+            
+            8'h27: //Reading of the sample data for channel 2 ADC 2
+              o_mcu_data <= i_adc2B_d;
+
+            8'h41: //Reading of the touch panel address needs loading of high byte first
+                  4'h0:
+                    o_mcu_data <= touch_panel_address[15:8];
+                  4'h1:
+                    o_mcu_data <= touch_panel_address[7:0];
+
+//***************************************************************************************
+//********************************* WRITING commands ************************************
+//***************************************************************************************
+            
+            8'h01: //Setting the sampling reset state
+                    sample_system_reset <= io_mcu_data[0];
+                    
+            8'h0B: //Loading 2 bytes of pretrigger_samples (set_trigger_point)
+                  4'h0:
+                    pretrigger_samples[12:8] <= io_mcu_data[4:0];
+                  4'h1:
+                    pretrigger_samples[7:0] <= io_mcu_data;
+            
+            8'h0C: //Loading two bytes of the total number of sample high byte first
+                  4'h0:
+                    total_samples[12:8] <= io_mcu_data[4:0];
+                  4'h1:
+                    total_samples[7:0] <= io_mcu_data;
+        
+            8'h0D: //Loading of the four bytes of the sample rate divider high byte first
+                  4'h0:
+                    sample_rate_divider[31:24] <= io_mcu_data;
+                  4'h1:
+                    sample_rate_divider[23:16] <= io_mcu_data;
+                  4'h2:
+                    sample_rate_divider[15:8] <= io_mcu_data;
+                  4'h3:
+                    sample_rate_divider[7:0] <= io_mcu_data;
+            
+            8'h0E: //Loading of the four bytes of the time base counter high byte first
+                  4'h0:
+                    time_base_set[31:24] <= io_mcu_data;
+                  4'h1:
+                    time_base_set[23:16] <= io_mcu_data;
+                  4'h2:
+                    time_base_set[15:8] <= io_mcu_data;
+                  4'h3:
+                    time_base_set[7:0] <= io_mcu_data;
+            
+            8'h0F: //Setting start of the conversion
+                    sample_read_enable <= io_mcu_data[0];
+
+            8'h15: //Setting the trigger channel
+                    trigger_channel <= io_mcu_data[0];
+              
+            8'h16: //Setting the trigger edge
+                    trigger_edge <= io_mcu_data[0];
+            
+            8'h17: //Setting the trigger level
+                    trigger_level <= io_mcu_data;
+          
+            8'h1A: //Setting the trigger mode
+                    trigger_mode <= io_mcu_data[0];
+                           
+            8'h1B: //Loading of the four bytes of the hold on divider high byte first
+                  4'h0:
+                    hold_on_divider[31:24] <= io_mcu_data;
+                  4'h1:
+                    hold_on_divider[23:16] <= io_mcu_data;
+                  4'h2:
+                    hold_on_divider[15:8] <= io_mcu_data;
+                  4'h3:
+                    hold_on_divider[7:0] <= io_mcu_data;
+            
+            8'h32: //Loading of the two bytes of the channel 1 DC offset high byte first
+                  4'h0:
+                    ch1_offset[15:8] <= io_mcu_data;
+                  4'h1:
+                    ch1_offset[7:0] <= io_mcu_data;
+            
+            8'h33: //Controlling of the channel 1 input sensitivity relays
+                    relay1_1 <=  io_mcu_data[0];
+                    relay1_2 <= ~io_mcu_data[1];
+                    relay1_3 <= ~io_mcu_data[2];
+            
+            8'h34: //Controlling of the channel 1 input for AC or DC
+                    ac_dc_1 <= io_mcu_data[0];
+
+            8'h35: //Loading of the two bytes of the channel 2 DC offset high byte first
+                  4'h0:
+                    ch2_offset[15:8] <= io_mcu_data;
+                  4'h1:
+                    ch2_offset[7:0] <= io_mcu_data;
+            
+            8'h36: //Controlling of the channel 2 input sensitivity relays
+                    relay2_1 <=  io_mcu_data[0];
+                    relay2_2 <= ~io_mcu_data[1];
+                    relay2_3 <= ~io_mcu_data[2];
+ 
+            8'h37: //Controlling of the channel 2 input for AC or DC
+                    ac_dc_2 <= io_mcu_data[0];
+         
+            8'h38: //Loading two bytes of the display brightness control high byte first
+                  4'h0:
+                    display_brigthness[15:8] <= io_mcu_data;
+                  4'h1:
+                    display_brigthness[7:0] <= io_mcu_data;
+//---------------------------------------------------------------------------------------           
+            8'h3C: //Loading two bytes of the touch panel read address high byte first
+                  4'h0:
+                    touch_panel_address[15:8] <= io_mcu_data;
+                  4'h1:
+                    touch_panel_address[7:0] <= io_mcu_data;
+                    
+            8'h50: //Setting the output on or tristate
+                   gen_out_enable <= io_mcu_data[0];
+                    
+            8'h51: //Loading of the four bytes of the clk out divider high byte first 
+                  4'h0:
+                    clk_out_divider[31:24] <= io_mcu_data;
+                  4'h1:
+                    clk_out_divider[23:16] <= io_mcu_data;
+                  4'h2:
+                    clk_out_divider[15:8] <= io_mcu_data;
+                  4'h3:
+                    clk_out_divider[7:0] <= io_mcu_data;
+            
+            8'h52: //Loading four bytes of the clk_out_duty divider high byte first
+                  4'h0:
+                    clk_out_duty[31:24] <= io_mcu_data;
+                  4'h1:
+                    clk_out_duty[23:16] <= io_mcu_data;
+                  4'h2:
+                    clk_out_duty[15:8] <= io_mcu_data;
+                  4'h3:
+                    clk_out_duty[7:0] <= io_mcu_data;               
+
+//=======================================================================================
