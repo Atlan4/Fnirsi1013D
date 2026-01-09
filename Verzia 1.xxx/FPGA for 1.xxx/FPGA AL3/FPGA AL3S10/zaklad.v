@@ -335,7 +335,7 @@ freq_generator_dds_pwm u_freq
   display_brightness
   (
     .clk        (clk_50MHz),
-    .pulsewidth (display_brigthness >> 5),	//.pulsewidth (display_brigthness),
+    .pulsewidth (display_brigthness),	//.pulsewidth (display_brigthness), .pulsewidth (display_brigthness >> 5),
     .pwm        (o_pwm_display)
   );
 
