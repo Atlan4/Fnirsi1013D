@@ -1,0 +1,3 @@
+3. The program rbf2bin finds the xxxx.rbf file, converts it and saves it as xxxx.bin
+  1. Copy the rbf file to the program folder.
+  2. Run rbf2bin
