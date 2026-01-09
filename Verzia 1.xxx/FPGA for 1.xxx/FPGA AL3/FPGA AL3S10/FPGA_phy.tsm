@@ -1,0 +1,681 @@
+al3_10
+13 621 505 484 93460 115 0
+-5.234 0.467 fnirsi_1013D al3_10 LQFP144 Detail 13 5
+clock: clk_200MHz
+13 43468 232 2
+Setup check
+23 3
+Endpoint: lt0/u6|lt0/u5
+23 -1.234000 543 3
+Timing path: add0/u7_al_u472.clk->lt0/u6|lt0/u5
+add0/u7_al_u472.clk
+lt0/u6|lt0/u5
+25 -1.234000 5.278000 6.512000 5 13
+sample_rate_counter[10] add0/u7_al_u472.b[1]
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 lt0/u6|lt0/u5.sr
+
+Timing path: lt0/u2|lt0/u1.clk->lt0/u6|lt0/u5
+lt0/u2|lt0/u1.clk
+lt0/u6|lt0/u5
+75 -1.156000 5.278000 6.434000 5 15
+sample_rate_counter[2] add0/ucin_al_u470.b[1]
+add0/c3 add0/u3_al_u471.fci
+add0/c7 add0/u7_al_u472.fci
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 lt0/u6|lt0/u5.sr
+
+Timing path: add0/ucin_al_u470.clk->lt0/u6|lt0/u5
+add0/ucin_al_u470.clk
+lt0/u6|lt0/u5
+129 -1.102000 5.278000 6.380000 5 15
+sample_rate_counter[0] add0/ucin_al_u470.b[0]
+add0/c3 add0/u3_al_u471.fci
+add0/c7 add0/u7_al_u472.fci
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 lt0/u6|lt0/u5.sr
+
+
+Endpoint: add0/ucin_al_u470
+183 -0.974000 543 3
+Timing path: add0/u7_al_u472.clk->add0/ucin_al_u470
+add0/u7_al_u472.clk
+add0/ucin_al_u470
+185 -0.974000 5.278000 6.252000 5 13
+sample_rate_counter[10] add0/u7_al_u472.b[1]
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 add0/ucin_al_u470.sr
+
+Timing path: lt0/u2|lt0/u1.clk->add0/ucin_al_u470
+lt0/u2|lt0/u1.clk
+add0/ucin_al_u470
+235 -0.896000 5.278000 6.174000 5 15
+sample_rate_counter[2] add0/ucin_al_u470.b[1]
+add0/c3 add0/u3_al_u471.fci
+add0/c7 add0/u7_al_u472.fci
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 add0/ucin_al_u470.sr
+
+Timing path: add0/ucin_al_u470.clk->add0/ucin_al_u470
+add0/ucin_al_u470.clk
+add0/ucin_al_u470
+289 -0.842000 5.278000 6.120000 5 15
+sample_rate_counter[0] add0/ucin_al_u470.b[0]
+add0/c3 add0/u3_al_u471.fci
+add0/c7 add0/u7_al_u472.fci
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 add0/ucin_al_u470.sr
+
+
+Endpoint: add0/u3_al_u471
+343 -0.974000 543 3
+Timing path: add0/u7_al_u472.clk->add0/u3_al_u471
+add0/u7_al_u472.clk
+add0/u3_al_u471
+345 -0.974000 5.278000 6.252000 5 13
+sample_rate_counter[10] add0/u7_al_u472.b[1]
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 add0/u3_al_u471.sr
+
+Timing path: lt0/u2|lt0/u1.clk->add0/u3_al_u471
+lt0/u2|lt0/u1.clk
+add0/u3_al_u471
+395 -0.896000 5.278000 6.174000 5 15
+sample_rate_counter[2] add0/ucin_al_u470.b[1]
+add0/c3 add0/u3_al_u471.fci
+add0/c7 add0/u7_al_u472.fci
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 add0/u3_al_u471.sr
+
+Timing path: add0/ucin_al_u470.clk->add0/u3_al_u471
+add0/ucin_al_u470.clk
+add0/u3_al_u471
+449 -0.842000 5.278000 6.120000 5 15
+sample_rate_counter[0] add0/ucin_al_u470.b[0]
+add0/c3 add0/u3_al_u471.fci
+add0/c7 add0/u7_al_u472.fci
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 add0/u3_al_u471.sr
+
+
+
+Hold check
+503 3
+Endpoint: _al_u168|sampling_triggered_reg
+505 0.467000 1 1
+Timing path: _al_u168|sampling_triggered_reg.clk->_al_u168|sampling_triggered_reg
+_al_u168|sampling_triggered_reg.clk
+_al_u168|sampling_triggered_reg
+507 0.467000 1.161000 1.628000 1 1
+sampling_triggered _al_u168|sampling_triggered_reg.a[0]
+
+
+Endpoint: _al_u180|peripheral_clock/clk_out_reg
+533 0.477000 1 1
+Timing path: _al_u396|peripheral_clock/count_reg[0].clk->_al_u180|peripheral_clock/clk_out_reg
+_al_u396|peripheral_clock/count_reg[0].clk
+_al_u180|peripheral_clock/clk_out_reg
+535 0.477000 1.161000 1.638000 1 1
+peripheral_clock/n0 _al_u180|peripheral_clock/clk_out_reg.ce
+
+
+Endpoint: _al_u180|peripheral_clock/clk_out_reg
+561 0.497000 1 1
+Timing path: _al_u180|peripheral_clock/clk_out_reg.clk->_al_u180|peripheral_clock/clk_out_reg
+_al_u180|peripheral_clock/clk_out_reg.clk
+_al_u180|peripheral_clock/clk_out_reg
+563 0.497000 1.161000 1.658000 1 1
+clk_50MHz _al_u180|peripheral_clock/clk_out_reg.a[0]
+
+
+
+
+clock: i_xtal
+589 0 0 0
+
+clock: main_clock/pll_inst.refclk
+600 0 0 0
+
+clock: main_clock/pll_inst.clkc[0]
+611 43468 232 2
+Setup check
+621 3
+Endpoint: lt0/u6|lt0/u5
+621 -5.234000 543 3
+Timing path: add0/u7_al_u472.clk->lt0/u6|lt0/u5
+add0/u7_al_u472.clk
+lt0/u6|lt0/u5
+623 -5.234000 1.278000 6.512000 5 13
+sample_rate_counter[10] add0/u7_al_u472.b[1]
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 lt0/u6|lt0/u5.sr
+
+Timing path: lt0/u2|lt0/u1.clk->lt0/u6|lt0/u5
+lt0/u2|lt0/u1.clk
+lt0/u6|lt0/u5
+673 -5.156000 1.278000 6.434000 5 15
+sample_rate_counter[2] add0/ucin_al_u470.b[1]
+add0/c3 add0/u3_al_u471.fci
+add0/c7 add0/u7_al_u472.fci
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 lt0/u6|lt0/u5.sr
+
+Timing path: add0/ucin_al_u470.clk->lt0/u6|lt0/u5
+add0/ucin_al_u470.clk
+lt0/u6|lt0/u5
+727 -5.102000 1.278000 6.380000 5 15
+sample_rate_counter[0] add0/ucin_al_u470.b[0]
+add0/c3 add0/u3_al_u471.fci
+add0/c7 add0/u7_al_u472.fci
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 lt0/u6|lt0/u5.sr
+
+
+Endpoint: add0/ucin_al_u470
+781 -4.974000 543 3
+Timing path: add0/u7_al_u472.clk->add0/ucin_al_u470
+add0/u7_al_u472.clk
+add0/ucin_al_u470
+783 -4.974000 1.278000 6.252000 5 13
+sample_rate_counter[10] add0/u7_al_u472.b[1]
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 add0/ucin_al_u470.sr
+
+Timing path: lt0/u2|lt0/u1.clk->add0/ucin_al_u470
+lt0/u2|lt0/u1.clk
+add0/ucin_al_u470
+833 -4.896000 1.278000 6.174000 5 15
+sample_rate_counter[2] add0/ucin_al_u470.b[1]
+add0/c3 add0/u3_al_u471.fci
+add0/c7 add0/u7_al_u472.fci
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 add0/ucin_al_u470.sr
+
+Timing path: add0/ucin_al_u470.clk->add0/ucin_al_u470
+add0/ucin_al_u470.clk
+add0/ucin_al_u470
+887 -4.842000 1.278000 6.120000 5 15
+sample_rate_counter[0] add0/ucin_al_u470.b[0]
+add0/c3 add0/u3_al_u471.fci
+add0/c7 add0/u7_al_u472.fci
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 add0/ucin_al_u470.sr
+
+
+Endpoint: add0/u3_al_u471
+941 -4.974000 543 3
+Timing path: add0/u7_al_u472.clk->add0/u3_al_u471
+add0/u7_al_u472.clk
+add0/u3_al_u471
+943 -4.974000 1.278000 6.252000 5 13
+sample_rate_counter[10] add0/u7_al_u472.b[1]
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 add0/u3_al_u471.sr
+
+Timing path: lt0/u2|lt0/u1.clk->add0/u3_al_u471
+lt0/u2|lt0/u1.clk
+add0/u3_al_u471
+993 -4.896000 1.278000 6.174000 5 15
+sample_rate_counter[2] add0/ucin_al_u470.b[1]
+add0/c3 add0/u3_al_u471.fci
+add0/c7 add0/u7_al_u472.fci
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 add0/u3_al_u471.sr
+
+Timing path: add0/ucin_al_u470.clk->add0/u3_al_u471
+add0/ucin_al_u470.clk
+add0/u3_al_u471
+1047 -4.842000 1.278000 6.120000 5 15
+sample_rate_counter[0] add0/ucin_al_u470.b[0]
+add0/c3 add0/u3_al_u471.fci
+add0/c7 add0/u7_al_u472.fci
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 add0/u3_al_u471.sr
+
+
+
+Hold check
+1101 3
+Endpoint: _al_u168|sampling_triggered_reg
+1103 0.467000 1 1
+Timing path: _al_u168|sampling_triggered_reg.clk->_al_u168|sampling_triggered_reg
+_al_u168|sampling_triggered_reg.clk
+_al_u168|sampling_triggered_reg
+1105 0.467000 1.161000 1.628000 1 1
+sampling_triggered _al_u168|sampling_triggered_reg.a[0]
+
+
+Endpoint: _al_u180|peripheral_clock/clk_out_reg
+1131 0.477000 1 1
+Timing path: _al_u396|peripheral_clock/count_reg[0].clk->_al_u180|peripheral_clock/clk_out_reg
+_al_u396|peripheral_clock/count_reg[0].clk
+_al_u180|peripheral_clock/clk_out_reg
+1133 0.477000 1.161000 1.638000 1 1
+peripheral_clock/n0 _al_u180|peripheral_clock/clk_out_reg.ce
+
+
+Endpoint: _al_u180|peripheral_clock/clk_out_reg
+1159 0.497000 1 1
+Timing path: _al_u180|peripheral_clock/clk_out_reg.clk->_al_u180|peripheral_clock/clk_out_reg
+_al_u180|peripheral_clock/clk_out_reg.clk
+_al_u180|peripheral_clock/clk_out_reg
+1161 0.497000 1.161000 1.658000 1 1
+clk_50MHz _al_u180|peripheral_clock/clk_out_reg.a[0]
+
+
+
+
+clock: main_clock/pll_inst.clkc[1]
+1187 6524 20 2
+Setup check
+1197 3
+Endpoint: adc1_encA_reg_DO
+1197 -4.671000 543 3
+Timing path: add0/u7_al_u472.clk->adc1_encA_reg_DO
+add0/u7_al_u472.clk
+adc1_encA_reg_DO
+1199 -4.671000 2.154000 6.825000 5 13
+sample_rate_counter[10] add0/u7_al_u472.b[1]
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 adc1_encA_reg_DO.ce
+
+Timing path: lt0/u2|lt0/u1.clk->adc1_encA_reg_DO
+lt0/u2|lt0/u1.clk
+adc1_encA_reg_DO
+1249 -4.593000 2.154000 6.747000 5 15
+sample_rate_counter[2] add0/ucin_al_u470.b[1]
+add0/c3 add0/u3_al_u471.fci
+add0/c7 add0/u7_al_u472.fci
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 adc1_encA_reg_DO.ce
+
+Timing path: add0/ucin_al_u470.clk->adc1_encA_reg_DO
+add0/ucin_al_u470.clk
+adc1_encA_reg_DO
+1303 -4.539000 2.154000 6.693000 5 15
+sample_rate_counter[0] add0/ucin_al_u470.b[0]
+add0/c3 add0/u3_al_u471.fci
+add0/c7 add0/u7_al_u472.fci
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 adc1_encA_reg_DO.ce
+
+
+Endpoint: adc1_encB_reg|adc2_encB_reg
+1357 -4.599000 543 3
+Timing path: add0/u7_al_u472.clk->adc1_encB_reg|adc2_encB_reg
+add0/u7_al_u472.clk
+adc1_encB_reg|adc2_encB_reg
+1359 -4.599000 2.099000 6.698000 5 13
+sample_rate_counter[10] add0/u7_al_u472.b[1]
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 adc1_encB_reg|adc2_encB_reg.ce
+
+Timing path: lt0/u2|lt0/u1.clk->adc1_encB_reg|adc2_encB_reg
+lt0/u2|lt0/u1.clk
+adc1_encB_reg|adc2_encB_reg
+1409 -4.521000 2.099000 6.620000 5 15
+sample_rate_counter[2] add0/ucin_al_u470.b[1]
+add0/c3 add0/u3_al_u471.fci
+add0/c7 add0/u7_al_u472.fci
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 adc1_encB_reg|adc2_encB_reg.ce
+
+Timing path: add0/ucin_al_u470.clk->adc1_encB_reg|adc2_encB_reg
+add0/ucin_al_u470.clk
+adc1_encB_reg|adc2_encB_reg
+1463 -4.467000 2.099000 6.566000 5 15
+sample_rate_counter[0] add0/ucin_al_u470.b[0]
+add0/c3 add0/u3_al_u471.fci
+add0/c7 add0/u7_al_u472.fci
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 adc1_encB_reg|adc2_encB_reg.ce
+
+
+Endpoint: adc2_encA_reg_DO
+1517 -4.493000 543 3
+Timing path: add0/u7_al_u472.clk->adc2_encA_reg_DO
+add0/u7_al_u472.clk
+adc2_encA_reg_DO
+1519 -4.493000 2.154000 6.647000 5 13
+sample_rate_counter[10] add0/u7_al_u472.b[1]
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 adc2_encA_reg_DO.ce
+
+Timing path: lt0/u2|lt0/u1.clk->adc2_encA_reg_DO
+lt0/u2|lt0/u1.clk
+adc2_encA_reg_DO
+1569 -4.415000 2.154000 6.569000 5 15
+sample_rate_counter[2] add0/ucin_al_u470.b[1]
+add0/c3 add0/u3_al_u471.fci
+add0/c7 add0/u7_al_u472.fci
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 adc2_encA_reg_DO.ce
+
+Timing path: add0/ucin_al_u470.clk->adc2_encA_reg_DO
+add0/ucin_al_u470.clk
+adc2_encA_reg_DO
+1623 -4.361000 2.154000 6.515000 5 15
+sample_rate_counter[0] add0/ucin_al_u470.b[0]
+add0/c3 add0/u3_al_u471.fci
+add0/c7 add0/u7_al_u472.fci
+add0/c11 add0/u11_al_u473.fci
+n11[14] lt0/u14|lt0/u13.b[1]
+lt0/c15 lt0/u16|lt0/u15.fci
+lt0/c17 lt0/u18|lt0/u17.fci
+lt0/c19 lt0/u20|lt0/u19.fci
+lt0/c21 lt0/u22|lt0/u21.fci
+lt0/c23 lt0/u24|lt0/u23.fci
+lt0/c25 lt0/u26|lt0/u25.fci
+lt0/c27 lt0/u28|lt0/u27.fci
+lt0/c29 lt0/u30|lt0/u29.fci
+lt0/c31 lt0/ucout|lt0/u31.fci
+n1 adc2_encA_reg_DO.ce
+
+
+
+Hold check
+1677 3
+Endpoint: adc1_encB_reg|adc2_encB_reg
+1679 0.616000 1 1
+Timing path: adc1_encB_reg|adc2_encB_reg.clk->adc1_encB_reg|adc2_encB_reg
+adc1_encB_reg|adc2_encB_reg.clk
+adc1_encB_reg|adc2_encB_reg
+1681 0.616000 1.039000 1.655000 1 1
+o_adc1_encB_pad adc1_encB_reg|adc2_encB_reg.a[1]
+
+
+Endpoint: adc1_encB_reg|adc2_encB_reg
+1707 0.616000 1 1
+Timing path: adc1_encB_reg|adc2_encB_reg.clk->adc1_encB_reg|adc2_encB_reg
+adc1_encB_reg|adc2_encB_reg.clk
+adc1_encB_reg|adc2_encB_reg
+1709 0.616000 1.039000 1.655000 1 1
+o_adc2_encB_pad adc1_encB_reg|adc2_encB_reg.a[0]
+
+
+Endpoint: adc1_encA_reg_DO
+1735 0.867000 1 1
+Timing path: adc1_encB_reg|adc2_encB_reg.clk->adc1_encA_reg_DO
+adc1_encB_reg|adc2_encB_reg.clk
+adc1_encA_reg_DO
+1737 0.867000 0.972000 1.839000 1 1
+o_adc1_encB_pad adc1_encA_reg_DO.otrue
+
+
+
+
+
+Timing group statistics: 
+	Clock constraints: 
+	  Clock Name                                  Min Period     Max Freq           Skew      Fanout            TNS
+	  clk_200MHz (200.000MHz)                        6.234ns     160.411MHz        0.149ns        22      -21.133ns
+	  main_clock/pll_inst.clkc[0] (200.000MHz)       10.234ns      97.714MHz        0.149ns        22     -172.906ns
+	  main_clock/pll_inst.clkc[1] (200.000MHz)        9.671ns     103.402MHz        0.078ns         3      -26.026ns
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+Warning: there are 3 clock nets without clock constraints.
+	clk_50MHz
+	i_mcu_clk_pad
+	sample_write_clock
+
