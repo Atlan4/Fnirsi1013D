@@ -1,5 +1,5 @@
 1. FPGA EP4CE06 directory with project - Quartus 22.1
-2. FPGA.bin - custom firmware for FPGA SPI flash
+2. fnirsi_1013D_EP4CE6.bin - custom firmware for FPGA SPI flash (use CH341 with 3.3V converter)
 
 3. The program rbf2bin finds the xxxx.rbf file, converts it and saves it as xxxx.bin
   1. Copy the rbf file to the program folder.
