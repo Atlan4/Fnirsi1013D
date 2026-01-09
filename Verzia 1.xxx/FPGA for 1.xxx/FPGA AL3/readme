@@ -1,4 +1,6 @@
 1. FPGA AL3S10 directory with project - Anlogic TD
-2. fpga-1013D-1-zb25vq80.bin - original FNIRSI FPGA firmware for SPI flash (use CH341 with 3.3V converter)
+2. fpga-1013D-1-zb25vq80.bin - original FNIRSI FPGA firmware for SPI flash
 3. FPGA.bin - custom firmware for FPGA SPI flash
+
+For programing SPI flash use CH341 with 3.3V converter
  
