@@ -1,0 +1,1841 @@
+=========================================================================================================
+Auto created by the td v4.6.116866
+   Copyright (c) 2012-2024 Anlogic
+Fri Jan  9 18:01:30 2026
+=========================================================================================================
+
+
+Top Model:                fnirsi_1013D                                                    
+Device:                   ef2_4                                                           
+Timing Constraint File:   zaklad.sdc                                                      
+STA Level:                Detail                                                          
+Process parameter::       TT  1.10v  85C                                                  
+
+=========================================================================================================
+Timing constraint:        clock: clk_200MHz                                               
+Clock = clk_200MHz, period 5ns, rising at 0ns, falling at 2ns
+
+224 endpoints analyzed totally, and 39124 paths analyzed
+34 errors detected : 34 setup errors (TNS = -46.437), 0 hold errors (TNS = 0.000)
+Minimum period is 6.943ns
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point add0/ucin_al_u455 (543 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)     -1.943 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ EndPoint:                add0/ucin_al_u455.sr (falling edge triggered by clock clk_200MHz)
+ Clock group:             clk_200MHz                                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.500
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.fco                                       cell                    0.874
+ add0/u3_al_u456.fci (add0/c3)                               net (fanout = 1)        0.000               
+ add0/u3_al_u456.fco                                         cell                    0.138
+ add0/u7_al_u457.fci (add0/c7)                               net (fanout = 1)        0.000               
+ add0/u7_al_u457.fx[1]                                       cell                    0.474
+ lt0_10|lt0_9.b[1] (n11[10])                                 net (fanout = 2)        0.787               
+ lt0_10|lt0_9.fco                                            cell                    0.564
+ lt0_12|lt0_11.fci (lt0_c11)                                 net (fanout = 1)        0.000               
+ lt0_12|lt0_11.fco                                           cell                    0.076
+ lt0_14|lt0_13.fci (lt0_c13)                                 net (fanout = 1)        0.000               
+ lt0_14|lt0_13.fco                                           cell                    0.076
+ lt0_16|lt0_15.fci (lt0_c15)                                 net (fanout = 1)        0.000               
+ lt0_16|lt0_15.fco                                           cell                    0.076
+ lt0_18|lt0_17.fci (lt0_c17)                                 net (fanout = 1)        0.000               
+ lt0_18|lt0_17.fco                                           cell                    0.076
+ lt0_20|lt0_19.fci (lt0_c19)                                 net (fanout = 1)        0.000               
+ lt0_20|lt0_19.fco                                           cell                    0.076
+ lt0_22|lt0_21.fci (lt0_c21)                                 net (fanout = 1)        0.000               
+ lt0_22|lt0_21.fco                                           cell                    0.076
+ lt0_24|lt0_23.fci (lt0_c23)                                 net (fanout = 1)        0.000               
+ lt0_24|lt0_23.fco                                           cell                    0.076
+ lt0_26|lt0_25.fci (lt0_c25)                                 net (fanout = 1)        0.000               
+ lt0_26|lt0_25.fco                                           cell                    0.076
+ lt0_28|lt0_27.fci (lt0_c27)                                 net (fanout = 1)        0.000               
+ lt0_28|lt0_27.fco                                           cell                    0.076
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ add0/ucin_al_u455.sr (n1)                                   net (fanout = 20)       1.022               
+ add0/ucin_al_u455                                           path2reg                0.086
+ Arrival time                                                                        9.969 (5 lvl)
+                                                                                          (74% logic, 26% net)
+
+ add0/ucin_al_u455.clk                                                               1.213
+ capture clock edge                                                                  7.000
+ cell setup                                                                         -0.187
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       8.026
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -1.943 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -1.880 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ EndPoint:                add0/ucin_al_u455.sr (falling edge triggered by clock clk_200MHz)
+ Clock group:             clk_200MHz                                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.500
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.fco                                       cell                    0.874
+ add0/u3_al_u456.fci (add0/c3)                               net (fanout = 1)        0.000               
+ add0/u3_al_u456.fco                                         cell                    0.138
+ add0/u7_al_u457.fci (add0/c7)                               net (fanout = 1)        0.000               
+ add0/u7_al_u457.fco                                         cell                    0.138
+ add0/u11_al_u458.fci (add0/c11)                             net (fanout = 1)        0.000               
+ add0/u11_al_u458.fco                                        cell                    0.138
+ add0/u15_al_u459.fci (add0/c15)                             net (fanout = 1)        0.000               
+ add0/u15_al_u459.fco                                        cell                    0.138
+ add0/u19_al_u460.fci (add0/c19)                             net (fanout = 1)        0.000               
+ add0/u19_al_u460.fco                                        cell                    0.138
+ add0/u23_al_u461.fci (add0/c23)                             net (fanout = 1)        0.000               
+ add0/u23_al_u461.fco                                        cell                    0.138
+ add0/u27_al_u462.fci (add0/c27)                             net (fanout = 1)        0.000               
+ add0/u27_al_u462.fx[0]                                      cell                    0.405
+ lt0_28|lt0_27.b[1] (n11[28])                                net (fanout = 2)        0.787               
+ lt0_28|lt0_27.fco                                           cell                    0.564
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ add0/ucin_al_u455.sr (n1)                                   net (fanout = 20)       1.022               
+ add0/ucin_al_u455                                           path2reg                0.086
+ Arrival time                                                                        9.906 (5 lvl)
+                                                                                          (74% logic, 26% net)
+
+ add0/ucin_al_u455.clk                                                               1.213
+ capture clock edge                                                                  7.000
+ cell setup                                                                         -0.187
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       8.026
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -1.880 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -1.867 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ EndPoint:                add0/ucin_al_u455.sr (falling edge triggered by clock clk_200MHz)
+ Clock group:             clk_200MHz                                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.500
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.f[1]                                      cell                    1.012
+ lt0_2|lt0_1.b[0] (n11[1])                                   net (fanout = 2)        0.790               
+ lt0_2|lt0_1.fco                                             cell                    0.655
+ lt0_4|lt0_3.fci (lt0_c3)                                    net (fanout = 1)        0.000               
+ lt0_4|lt0_3.fco                                             cell                    0.076
+ lt0_6|lt0_5.fci (lt0_c5)                                    net (fanout = 1)        0.000               
+ lt0_6|lt0_5.fco                                             cell                    0.076
+ lt0_8|lt0_7.fci (lt0_c7)                                    net (fanout = 1)        0.000               
+ lt0_8|lt0_7.fco                                             cell                    0.076
+ lt0_10|lt0_9.fci (lt0_c9)                                   net (fanout = 1)        0.000               
+ lt0_10|lt0_9.fco                                            cell                    0.076
+ lt0_12|lt0_11.fci (lt0_c11)                                 net (fanout = 1)        0.000               
+ lt0_12|lt0_11.fco                                           cell                    0.076
+ lt0_14|lt0_13.fci (lt0_c13)                                 net (fanout = 1)        0.000               
+ lt0_14|lt0_13.fco                                           cell                    0.076
+ lt0_16|lt0_15.fci (lt0_c15)                                 net (fanout = 1)        0.000               
+ lt0_16|lt0_15.fco                                           cell                    0.076
+ lt0_18|lt0_17.fci (lt0_c17)                                 net (fanout = 1)        0.000               
+ lt0_18|lt0_17.fco                                           cell                    0.076
+ lt0_20|lt0_19.fci (lt0_c19)                                 net (fanout = 1)        0.000               
+ lt0_20|lt0_19.fco                                           cell                    0.076
+ lt0_22|lt0_21.fci (lt0_c21)                                 net (fanout = 1)        0.000               
+ lt0_22|lt0_21.fco                                           cell                    0.076
+ lt0_24|lt0_23.fci (lt0_c23)                                 net (fanout = 1)        0.000               
+ lt0_24|lt0_23.fco                                           cell                    0.076
+ lt0_26|lt0_25.fci (lt0_c25)                                 net (fanout = 1)        0.000               
+ lt0_26|lt0_25.fco                                           cell                    0.076
+ lt0_28|lt0_27.fci (lt0_c27)                                 net (fanout = 1)        0.000               
+ lt0_28|lt0_27.fco                                           cell                    0.076
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ add0/ucin_al_u455.sr (n1)                                   net (fanout = 20)       1.022               
+ add0/ucin_al_u455                                           path2reg                0.086
+ Arrival time                                                                        9.893 (4 lvl)
+                                                                                          (74% logic, 26% net)
+
+ add0/ucin_al_u455.clk                                                               1.213
+ capture clock edge                                                                  7.000
+ cell setup                                                                         -0.187
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       8.026
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -1.867 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point sample_write_clock_reg (543 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)     -1.887 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ EndPoint:                sample_write_clock_reg.ce (falling edge triggered by clock clk_200MHz)
+ Clock group:             clk_200MHz                                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.500
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.fco                                       cell                    0.874
+ add0/u3_al_u456.fci (add0/c3)                               net (fanout = 1)        0.000               
+ add0/u3_al_u456.fco                                         cell                    0.138
+ add0/u7_al_u457.fci (add0/c7)                               net (fanout = 1)        0.000               
+ add0/u7_al_u457.fx[1]                                       cell                    0.474
+ lt0_10|lt0_9.b[1] (n11[10])                                 net (fanout = 2)        0.787               
+ lt0_10|lt0_9.fco                                            cell                    0.564
+ lt0_12|lt0_11.fci (lt0_c11)                                 net (fanout = 1)        0.000               
+ lt0_12|lt0_11.fco                                           cell                    0.076
+ lt0_14|lt0_13.fci (lt0_c13)                                 net (fanout = 1)        0.000               
+ lt0_14|lt0_13.fco                                           cell                    0.076
+ lt0_16|lt0_15.fci (lt0_c15)                                 net (fanout = 1)        0.000               
+ lt0_16|lt0_15.fco                                           cell                    0.076
+ lt0_18|lt0_17.fci (lt0_c17)                                 net (fanout = 1)        0.000               
+ lt0_18|lt0_17.fco                                           cell                    0.076
+ lt0_20|lt0_19.fci (lt0_c19)                                 net (fanout = 1)        0.000               
+ lt0_20|lt0_19.fco                                           cell                    0.076
+ lt0_22|lt0_21.fci (lt0_c21)                                 net (fanout = 1)        0.000               
+ lt0_22|lt0_21.fco                                           cell                    0.076
+ lt0_24|lt0_23.fci (lt0_c23)                                 net (fanout = 1)        0.000               
+ lt0_24|lt0_23.fco                                           cell                    0.076
+ lt0_26|lt0_25.fci (lt0_c25)                                 net (fanout = 1)        0.000               
+ lt0_26|lt0_25.fco                                           cell                    0.076
+ lt0_28|lt0_27.fci (lt0_c27)                                 net (fanout = 1)        0.000               
+ lt0_28|lt0_27.fco                                           cell                    0.076
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ sample_write_clock_reg.ce (n1)                              net (fanout = 20)       1.036               
+ sample_write_clock_reg                                      path2reg                0.087
+ Arrival time                                                                        9.984 (5 lvl)
+                                                                                          (74% logic, 26% net)
+
+ sample_write_clock_reg.clk                                                          1.213
+ capture clock edge                                                                  7.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       8.097
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -1.887 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -1.824 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ EndPoint:                sample_write_clock_reg.ce (falling edge triggered by clock clk_200MHz)
+ Clock group:             clk_200MHz                                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.500
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.fco                                       cell                    0.874
+ add0/u3_al_u456.fci (add0/c3)                               net (fanout = 1)        0.000               
+ add0/u3_al_u456.fco                                         cell                    0.138
+ add0/u7_al_u457.fci (add0/c7)                               net (fanout = 1)        0.000               
+ add0/u7_al_u457.fco                                         cell                    0.138
+ add0/u11_al_u458.fci (add0/c11)                             net (fanout = 1)        0.000               
+ add0/u11_al_u458.fco                                        cell                    0.138
+ add0/u15_al_u459.fci (add0/c15)                             net (fanout = 1)        0.000               
+ add0/u15_al_u459.fco                                        cell                    0.138
+ add0/u19_al_u460.fci (add0/c19)                             net (fanout = 1)        0.000               
+ add0/u19_al_u460.fco                                        cell                    0.138
+ add0/u23_al_u461.fci (add0/c23)                             net (fanout = 1)        0.000               
+ add0/u23_al_u461.fco                                        cell                    0.138
+ add0/u27_al_u462.fci (add0/c27)                             net (fanout = 1)        0.000               
+ add0/u27_al_u462.fx[0]                                      cell                    0.405
+ lt0_28|lt0_27.b[1] (n11[28])                                net (fanout = 2)        0.787               
+ lt0_28|lt0_27.fco                                           cell                    0.564
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ sample_write_clock_reg.ce (n1)                              net (fanout = 20)       1.036               
+ sample_write_clock_reg                                      path2reg                0.087
+ Arrival time                                                                        9.921 (5 lvl)
+                                                                                          (74% logic, 26% net)
+
+ sample_write_clock_reg.clk                                                          1.213
+ capture clock edge                                                                  7.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       8.097
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -1.824 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -1.811 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ EndPoint:                sample_write_clock_reg.ce (falling edge triggered by clock clk_200MHz)
+ Clock group:             clk_200MHz                                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.500
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.f[1]                                      cell                    1.012
+ lt0_2|lt0_1.b[0] (n11[1])                                   net (fanout = 2)        0.790               
+ lt0_2|lt0_1.fco                                             cell                    0.655
+ lt0_4|lt0_3.fci (lt0_c3)                                    net (fanout = 1)        0.000               
+ lt0_4|lt0_3.fco                                             cell                    0.076
+ lt0_6|lt0_5.fci (lt0_c5)                                    net (fanout = 1)        0.000               
+ lt0_6|lt0_5.fco                                             cell                    0.076
+ lt0_8|lt0_7.fci (lt0_c7)                                    net (fanout = 1)        0.000               
+ lt0_8|lt0_7.fco                                             cell                    0.076
+ lt0_10|lt0_9.fci (lt0_c9)                                   net (fanout = 1)        0.000               
+ lt0_10|lt0_9.fco                                            cell                    0.076
+ lt0_12|lt0_11.fci (lt0_c11)                                 net (fanout = 1)        0.000               
+ lt0_12|lt0_11.fco                                           cell                    0.076
+ lt0_14|lt0_13.fci (lt0_c13)                                 net (fanout = 1)        0.000               
+ lt0_14|lt0_13.fco                                           cell                    0.076
+ lt0_16|lt0_15.fci (lt0_c15)                                 net (fanout = 1)        0.000               
+ lt0_16|lt0_15.fco                                           cell                    0.076
+ lt0_18|lt0_17.fci (lt0_c17)                                 net (fanout = 1)        0.000               
+ lt0_18|lt0_17.fco                                           cell                    0.076
+ lt0_20|lt0_19.fci (lt0_c19)                                 net (fanout = 1)        0.000               
+ lt0_20|lt0_19.fco                                           cell                    0.076
+ lt0_22|lt0_21.fci (lt0_c21)                                 net (fanout = 1)        0.000               
+ lt0_22|lt0_21.fco                                           cell                    0.076
+ lt0_24|lt0_23.fci (lt0_c23)                                 net (fanout = 1)        0.000               
+ lt0_24|lt0_23.fco                                           cell                    0.076
+ lt0_26|lt0_25.fci (lt0_c25)                                 net (fanout = 1)        0.000               
+ lt0_26|lt0_25.fco                                           cell                    0.076
+ lt0_28|lt0_27.fci (lt0_c27)                                 net (fanout = 1)        0.000               
+ lt0_28|lt0_27.fco                                           cell                    0.076
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ sample_write_clock_reg.ce (n1)                              net (fanout = 20)       1.036               
+ sample_write_clock_reg                                      path2reg                0.087
+ Arrival time                                                                        9.908 (4 lvl)
+                                                                                          (74% logic, 26% net)
+
+ sample_write_clock_reg.clk                                                          1.213
+ capture clock edge                                                                  7.000
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       8.097
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -1.811 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point reg0_b15|reg0_b4 (543 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)     -1.776 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ EndPoint:                reg0_b15|reg0_b4.sr (falling edge triggered by clock clk_200MHz)
+ Clock group:             clk_200MHz                                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.500
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.fco                                       cell                    0.874
+ add0/u3_al_u456.fci (add0/c3)                               net (fanout = 1)        0.000               
+ add0/u3_al_u456.fco                                         cell                    0.138
+ add0/u7_al_u457.fci (add0/c7)                               net (fanout = 1)        0.000               
+ add0/u7_al_u457.fx[1]                                       cell                    0.474
+ lt0_10|lt0_9.b[1] (n11[10])                                 net (fanout = 2)        0.787               
+ lt0_10|lt0_9.fco                                            cell                    0.564
+ lt0_12|lt0_11.fci (lt0_c11)                                 net (fanout = 1)        0.000               
+ lt0_12|lt0_11.fco                                           cell                    0.076
+ lt0_14|lt0_13.fci (lt0_c13)                                 net (fanout = 1)        0.000               
+ lt0_14|lt0_13.fco                                           cell                    0.076
+ lt0_16|lt0_15.fci (lt0_c15)                                 net (fanout = 1)        0.000               
+ lt0_16|lt0_15.fco                                           cell                    0.076
+ lt0_18|lt0_17.fci (lt0_c17)                                 net (fanout = 1)        0.000               
+ lt0_18|lt0_17.fco                                           cell                    0.076
+ lt0_20|lt0_19.fci (lt0_c19)                                 net (fanout = 1)        0.000               
+ lt0_20|lt0_19.fco                                           cell                    0.076
+ lt0_22|lt0_21.fci (lt0_c21)                                 net (fanout = 1)        0.000               
+ lt0_22|lt0_21.fco                                           cell                    0.076
+ lt0_24|lt0_23.fci (lt0_c23)                                 net (fanout = 1)        0.000               
+ lt0_24|lt0_23.fco                                           cell                    0.076
+ lt0_26|lt0_25.fci (lt0_c25)                                 net (fanout = 1)        0.000               
+ lt0_26|lt0_25.fco                                           cell                    0.076
+ lt0_28|lt0_27.fci (lt0_c27)                                 net (fanout = 1)        0.000               
+ lt0_28|lt0_27.fco                                           cell                    0.076
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ reg0_b15|reg0_b4.sr (n1)                                    net (fanout = 20)       0.855               
+ reg0_b15|reg0_b4                                            path2reg                0.086
+ Arrival time                                                                        9.802 (5 lvl)
+                                                                                          (76% logic, 24% net)
+
+ reg0_b15|reg0_b4.clk                                                                1.213
+ capture clock edge                                                                  7.000
+ cell setup                                                                         -0.187
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       8.026
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -1.776 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -1.713 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ EndPoint:                reg0_b15|reg0_b4.sr (falling edge triggered by clock clk_200MHz)
+ Clock group:             clk_200MHz                                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.500
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.fco                                       cell                    0.874
+ add0/u3_al_u456.fci (add0/c3)                               net (fanout = 1)        0.000               
+ add0/u3_al_u456.fco                                         cell                    0.138
+ add0/u7_al_u457.fci (add0/c7)                               net (fanout = 1)        0.000               
+ add0/u7_al_u457.fco                                         cell                    0.138
+ add0/u11_al_u458.fci (add0/c11)                             net (fanout = 1)        0.000               
+ add0/u11_al_u458.fco                                        cell                    0.138
+ add0/u15_al_u459.fci (add0/c15)                             net (fanout = 1)        0.000               
+ add0/u15_al_u459.fco                                        cell                    0.138
+ add0/u19_al_u460.fci (add0/c19)                             net (fanout = 1)        0.000               
+ add0/u19_al_u460.fco                                        cell                    0.138
+ add0/u23_al_u461.fci (add0/c23)                             net (fanout = 1)        0.000               
+ add0/u23_al_u461.fco                                        cell                    0.138
+ add0/u27_al_u462.fci (add0/c27)                             net (fanout = 1)        0.000               
+ add0/u27_al_u462.fx[0]                                      cell                    0.405
+ lt0_28|lt0_27.b[1] (n11[28])                                net (fanout = 2)        0.787               
+ lt0_28|lt0_27.fco                                           cell                    0.564
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ reg0_b15|reg0_b4.sr (n1)                                    net (fanout = 20)       0.855               
+ reg0_b15|reg0_b4                                            path2reg                0.086
+ Arrival time                                                                        9.739 (5 lvl)
+                                                                                          (76% logic, 24% net)
+
+ reg0_b15|reg0_b4.clk                                                                1.213
+ capture clock edge                                                                  7.000
+ cell setup                                                                         -0.187
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       8.026
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -1.713 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -1.700 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ EndPoint:                reg0_b15|reg0_b4.sr (falling edge triggered by clock clk_200MHz)
+ Clock group:             clk_200MHz                                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.500
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.f[1]                                      cell                    1.012
+ lt0_2|lt0_1.b[0] (n11[1])                                   net (fanout = 2)        0.790               
+ lt0_2|lt0_1.fco                                             cell                    0.655
+ lt0_4|lt0_3.fci (lt0_c3)                                    net (fanout = 1)        0.000               
+ lt0_4|lt0_3.fco                                             cell                    0.076
+ lt0_6|lt0_5.fci (lt0_c5)                                    net (fanout = 1)        0.000               
+ lt0_6|lt0_5.fco                                             cell                    0.076
+ lt0_8|lt0_7.fci (lt0_c7)                                    net (fanout = 1)        0.000               
+ lt0_8|lt0_7.fco                                             cell                    0.076
+ lt0_10|lt0_9.fci (lt0_c9)                                   net (fanout = 1)        0.000               
+ lt0_10|lt0_9.fco                                            cell                    0.076
+ lt0_12|lt0_11.fci (lt0_c11)                                 net (fanout = 1)        0.000               
+ lt0_12|lt0_11.fco                                           cell                    0.076
+ lt0_14|lt0_13.fci (lt0_c13)                                 net (fanout = 1)        0.000               
+ lt0_14|lt0_13.fco                                           cell                    0.076
+ lt0_16|lt0_15.fci (lt0_c15)                                 net (fanout = 1)        0.000               
+ lt0_16|lt0_15.fco                                           cell                    0.076
+ lt0_18|lt0_17.fci (lt0_c17)                                 net (fanout = 1)        0.000               
+ lt0_18|lt0_17.fco                                           cell                    0.076
+ lt0_20|lt0_19.fci (lt0_c19)                                 net (fanout = 1)        0.000               
+ lt0_20|lt0_19.fco                                           cell                    0.076
+ lt0_22|lt0_21.fci (lt0_c21)                                 net (fanout = 1)        0.000               
+ lt0_22|lt0_21.fco                                           cell                    0.076
+ lt0_24|lt0_23.fci (lt0_c23)                                 net (fanout = 1)        0.000               
+ lt0_24|lt0_23.fco                                           cell                    0.076
+ lt0_26|lt0_25.fci (lt0_c25)                                 net (fanout = 1)        0.000               
+ lt0_26|lt0_25.fco                                           cell                    0.076
+ lt0_28|lt0_27.fci (lt0_c27)                                 net (fanout = 1)        0.000               
+ lt0_28|lt0_27.fco                                           cell                    0.076
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ reg0_b15|reg0_b4.sr (n1)                                    net (fanout = 20)       0.855               
+ reg0_b15|reg0_b4                                            path2reg                0.086
+ Arrival time                                                                        9.726 (4 lvl)
+                                                                                          (76% logic, 24% net)
+
+ reg0_b15|reg0_b4.clk                                                                1.213
+ capture clock edge                                                                  7.000
+ cell setup                                                                         -0.187
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       8.026
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -1.700 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Hold checks:
+---------------------------------------------------------------------------------------------------------
+Paths for end point peripheral_clock/clk_out_reg (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.384 ns                                                        
+ StartPoint:              _al_u451|peripheral_clock/count_reg[0].clk (rising edge triggered by clock main_clock/pll_inst.clkc[0])
+ EndPoint:                peripheral_clock/clk_out_reg.ce (rising edge triggered by clock clk_200MHz)
+ Clock group:             clk_200MHz                                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u451|peripheral_clock/count_reg[0].clk                  clock                   1.272
+ launch clock edge                                           clock                   0.000
+ _al_u451|peripheral_clock/count_reg[0].q[0]                 cell                    0.140
+ peripheral_clock/clk_out_reg.ce (peripheral_clock/n0)       net (fanout = 3)        0.435               
+ peripheral_clock/clk_out_reg                                path2reg                0.084
+ Arrival time                                                                        1.931 (1 lvl)
+                                                                                          (78% logic, 22% net)
+
+ peripheral_clock/clk_out_reg.clk                                                    1.473
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       1.547
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.384 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point _al_u451|peripheral_clock/count_reg[0] (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.447 ns                                                        
+ StartPoint:              _al_u451|peripheral_clock/count_reg[0].clk (rising edge triggered by clock main_clock/pll_inst.clkc[0])
+ EndPoint:                _al_u451|peripheral_clock/count_reg[0].sr (rising edge triggered by clock clk_200MHz)
+ Clock group:             clk_200MHz                                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u451|peripheral_clock/count_reg[0].clk                  clock                   1.272
+ launch clock edge                                           clock                   0.000
+ _al_u451|peripheral_clock/count_reg[0].q[0]                 cell                    0.140
+ _al_u451|peripheral_clock/count_reg[0].sr (peripheral_clock/n0) net (fanout = 3)        0.435               
+ _al_u451|peripheral_clock/count_reg[0]                      path2reg                0.083
+ Arrival time                                                                        1.930 (1 lvl)
+                                                                                          (78% logic, 22% net)
+
+ _al_u451|peripheral_clock/count_reg[0].clk                                          1.473
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.010
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       1.483
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.447 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point _al_u434|sampling_triggered_reg (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.518 ns                                                        
+ StartPoint:              _al_u434|sampling_triggered_reg.clk (rising edge triggered by clock main_clock/pll_inst.clkc[0])
+ EndPoint:                _al_u434|sampling_triggered_reg.a[0] (rising edge triggered by clock clk_200MHz)
+ Clock group:             clk_200MHz                                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u434|sampling_triggered_reg.clk                         clock                   1.272
+ launch clock edge                                           clock                   0.000
+ _al_u434|sampling_triggered_reg.q[0]                        cell                    0.140
+ _al_u434|sampling_triggered_reg.a[0] (sampling_triggered)   net (fanout = 5)        0.175  zaklad.v(210)
+ _al_u434|sampling_triggered_reg                             path2reg0               0.478
+ Arrival time                                                                        2.065 (1 lvl)
+                                                                                          (92% logic, 8% net)
+
+ _al_u434|sampling_triggered_reg.clk                                                 1.473
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       1.547
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.518 ns
+
+---------------------------------------------------------------------------------------------------------
+
+
+=========================================================================================================
+Timing constraint:        clock: i_xtal                                                   
+Clock = i_xtal, period 20ns, rising at 0ns, falling at 10ns
+
+0 endpoints analyzed totally, and 0 paths analyzed
+0 errors detected : 0 setup errors (TNS = 0.000), 0 hold errors (TNS = 0.000)
+---------------------------------------------------------------------------------------------------------
+
+Hold checks:
+---------------------------------------------------------------------------------------------------------
+
+=========================================================================================================
+Timing constraint:        clock: main_clock/pll_inst.refclk                               
+Clock = main_clock/pll_inst.refclk, period 20ns, rising at 0ns, falling at 10ns
+
+0 endpoints analyzed totally, and 0 paths analyzed
+0 errors detected : 0 setup errors (TNS = 0.000), 0 hold errors (TNS = 0.000)
+---------------------------------------------------------------------------------------------------------
+
+Hold checks:
+---------------------------------------------------------------------------------------------------------
+
+=========================================================================================================
+Timing constraint:        clock: main_clock/pll_inst.clkc[1]                              
+Clock = main_clock/pll_inst.clkc[1], period 5ns, rising at 1.25ns, falling at 3.75ns
+
+20 endpoints analyzed totally, and 6524 paths analyzed
+6 errors detected : 6 setup errors (TNS = -31.090), 0 hold errors (TNS = 0.000)
+Minimum period is 10.521ns
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point adc1_encA_reg_DO (543 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)     -5.521 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ EndPoint:                adc1_encA_reg_DO.ce (falling edge triggered by clock main_clock/pll_inst.clkc[1])
+ Clock group:             main_clock/pll_inst.refclk                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.500
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.fco                                       cell                    0.874
+ add0/u3_al_u456.fci (add0/c3)                               net (fanout = 1)        0.000               
+ add0/u3_al_u456.fco                                         cell                    0.138
+ add0/u7_al_u457.fci (add0/c7)                               net (fanout = 1)        0.000               
+ add0/u7_al_u457.fx[1]                                       cell                    0.474
+ lt0_10|lt0_9.b[1] (n11[10])                                 net (fanout = 2)        0.787               
+ lt0_10|lt0_9.fco                                            cell                    0.564
+ lt0_12|lt0_11.fci (lt0_c11)                                 net (fanout = 1)        0.000               
+ lt0_12|lt0_11.fco                                           cell                    0.076
+ lt0_14|lt0_13.fci (lt0_c13)                                 net (fanout = 1)        0.000               
+ lt0_14|lt0_13.fco                                           cell                    0.076
+ lt0_16|lt0_15.fci (lt0_c15)                                 net (fanout = 1)        0.000               
+ lt0_16|lt0_15.fco                                           cell                    0.076
+ lt0_18|lt0_17.fci (lt0_c17)                                 net (fanout = 1)        0.000               
+ lt0_18|lt0_17.fco                                           cell                    0.076
+ lt0_20|lt0_19.fci (lt0_c19)                                 net (fanout = 1)        0.000               
+ lt0_20|lt0_19.fco                                           cell                    0.076
+ lt0_22|lt0_21.fci (lt0_c21)                                 net (fanout = 1)        0.000               
+ lt0_22|lt0_21.fco                                           cell                    0.076
+ lt0_24|lt0_23.fci (lt0_c23)                                 net (fanout = 1)        0.000               
+ lt0_24|lt0_23.fco                                           cell                    0.076
+ lt0_26|lt0_25.fci (lt0_c25)                                 net (fanout = 1)        0.000               
+ lt0_26|lt0_25.fco                                           cell                    0.076
+ lt0_28|lt0_27.fci (lt0_c27)                                 net (fanout = 1)        0.000               
+ lt0_28|lt0_27.fco                                           cell                    0.076
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ adc1_encA_reg_DO.ce (n1)                                    net (fanout = 20)       1.521               
+ adc1_encA_reg_DO                                            path2reg                0.000
+ Arrival time                                                                       10.382 (5 lvl)
+                                                                                          (71% logic, 29% net)
+
+ adc1_encA_reg_DO.clk                                                                1.016
+ capture clock edge                                                                  3.750
+ cell setup                                                                          0.095
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       4.861
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -5.521 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -5.458 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ EndPoint:                adc1_encA_reg_DO.ce (falling edge triggered by clock main_clock/pll_inst.clkc[1])
+ Clock group:             main_clock/pll_inst.refclk                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.500
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.fco                                       cell                    0.874
+ add0/u3_al_u456.fci (add0/c3)                               net (fanout = 1)        0.000               
+ add0/u3_al_u456.fco                                         cell                    0.138
+ add0/u7_al_u457.fci (add0/c7)                               net (fanout = 1)        0.000               
+ add0/u7_al_u457.fco                                         cell                    0.138
+ add0/u11_al_u458.fci (add0/c11)                             net (fanout = 1)        0.000               
+ add0/u11_al_u458.fco                                        cell                    0.138
+ add0/u15_al_u459.fci (add0/c15)                             net (fanout = 1)        0.000               
+ add0/u15_al_u459.fco                                        cell                    0.138
+ add0/u19_al_u460.fci (add0/c19)                             net (fanout = 1)        0.000               
+ add0/u19_al_u460.fco                                        cell                    0.138
+ add0/u23_al_u461.fci (add0/c23)                             net (fanout = 1)        0.000               
+ add0/u23_al_u461.fco                                        cell                    0.138
+ add0/u27_al_u462.fci (add0/c27)                             net (fanout = 1)        0.000               
+ add0/u27_al_u462.fx[0]                                      cell                    0.405
+ lt0_28|lt0_27.b[1] (n11[28])                                net (fanout = 2)        0.787               
+ lt0_28|lt0_27.fco                                           cell                    0.564
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ adc1_encA_reg_DO.ce (n1)                                    net (fanout = 20)       1.521               
+ adc1_encA_reg_DO                                            path2reg                0.000
+ Arrival time                                                                       10.319 (5 lvl)
+                                                                                          (71% logic, 29% net)
+
+ adc1_encA_reg_DO.clk                                                                1.016
+ capture clock edge                                                                  3.750
+ cell setup                                                                          0.095
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       4.861
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -5.458 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -5.445 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ EndPoint:                adc1_encA_reg_DO.ce (falling edge triggered by clock main_clock/pll_inst.clkc[1])
+ Clock group:             main_clock/pll_inst.refclk                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.500
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.f[1]                                      cell                    1.012
+ lt0_2|lt0_1.b[0] (n11[1])                                   net (fanout = 2)        0.790               
+ lt0_2|lt0_1.fco                                             cell                    0.655
+ lt0_4|lt0_3.fci (lt0_c3)                                    net (fanout = 1)        0.000               
+ lt0_4|lt0_3.fco                                             cell                    0.076
+ lt0_6|lt0_5.fci (lt0_c5)                                    net (fanout = 1)        0.000               
+ lt0_6|lt0_5.fco                                             cell                    0.076
+ lt0_8|lt0_7.fci (lt0_c7)                                    net (fanout = 1)        0.000               
+ lt0_8|lt0_7.fco                                             cell                    0.076
+ lt0_10|lt0_9.fci (lt0_c9)                                   net (fanout = 1)        0.000               
+ lt0_10|lt0_9.fco                                            cell                    0.076
+ lt0_12|lt0_11.fci (lt0_c11)                                 net (fanout = 1)        0.000               
+ lt0_12|lt0_11.fco                                           cell                    0.076
+ lt0_14|lt0_13.fci (lt0_c13)                                 net (fanout = 1)        0.000               
+ lt0_14|lt0_13.fco                                           cell                    0.076
+ lt0_16|lt0_15.fci (lt0_c15)                                 net (fanout = 1)        0.000               
+ lt0_16|lt0_15.fco                                           cell                    0.076
+ lt0_18|lt0_17.fci (lt0_c17)                                 net (fanout = 1)        0.000               
+ lt0_18|lt0_17.fco                                           cell                    0.076
+ lt0_20|lt0_19.fci (lt0_c19)                                 net (fanout = 1)        0.000               
+ lt0_20|lt0_19.fco                                           cell                    0.076
+ lt0_22|lt0_21.fci (lt0_c21)                                 net (fanout = 1)        0.000               
+ lt0_22|lt0_21.fco                                           cell                    0.076
+ lt0_24|lt0_23.fci (lt0_c23)                                 net (fanout = 1)        0.000               
+ lt0_24|lt0_23.fco                                           cell                    0.076
+ lt0_26|lt0_25.fci (lt0_c25)                                 net (fanout = 1)        0.000               
+ lt0_26|lt0_25.fco                                           cell                    0.076
+ lt0_28|lt0_27.fci (lt0_c27)                                 net (fanout = 1)        0.000               
+ lt0_28|lt0_27.fco                                           cell                    0.076
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ adc1_encA_reg_DO.ce (n1)                                    net (fanout = 20)       1.521               
+ adc1_encA_reg_DO                                            path2reg                0.000
+ Arrival time                                                                       10.306 (4 lvl)
+                                                                                          (70% logic, 30% net)
+
+ adc1_encA_reg_DO.clk                                                                1.016
+ capture clock edge                                                                  3.750
+ cell setup                                                                          0.095
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       4.861
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -5.445 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point adc2_encA_reg_DO (543 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)     -5.458 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ EndPoint:                adc2_encA_reg_DO.ce (falling edge triggered by clock main_clock/pll_inst.clkc[1])
+ Clock group:             main_clock/pll_inst.refclk                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.500
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.fco                                       cell                    0.874
+ add0/u3_al_u456.fci (add0/c3)                               net (fanout = 1)        0.000               
+ add0/u3_al_u456.fco                                         cell                    0.138
+ add0/u7_al_u457.fci (add0/c7)                               net (fanout = 1)        0.000               
+ add0/u7_al_u457.fx[1]                                       cell                    0.474
+ lt0_10|lt0_9.b[1] (n11[10])                                 net (fanout = 2)        0.787               
+ lt0_10|lt0_9.fco                                            cell                    0.564
+ lt0_12|lt0_11.fci (lt0_c11)                                 net (fanout = 1)        0.000               
+ lt0_12|lt0_11.fco                                           cell                    0.076
+ lt0_14|lt0_13.fci (lt0_c13)                                 net (fanout = 1)        0.000               
+ lt0_14|lt0_13.fco                                           cell                    0.076
+ lt0_16|lt0_15.fci (lt0_c15)                                 net (fanout = 1)        0.000               
+ lt0_16|lt0_15.fco                                           cell                    0.076
+ lt0_18|lt0_17.fci (lt0_c17)                                 net (fanout = 1)        0.000               
+ lt0_18|lt0_17.fco                                           cell                    0.076
+ lt0_20|lt0_19.fci (lt0_c19)                                 net (fanout = 1)        0.000               
+ lt0_20|lt0_19.fco                                           cell                    0.076
+ lt0_22|lt0_21.fci (lt0_c21)                                 net (fanout = 1)        0.000               
+ lt0_22|lt0_21.fco                                           cell                    0.076
+ lt0_24|lt0_23.fci (lt0_c23)                                 net (fanout = 1)        0.000               
+ lt0_24|lt0_23.fco                                           cell                    0.076
+ lt0_26|lt0_25.fci (lt0_c25)                                 net (fanout = 1)        0.000               
+ lt0_26|lt0_25.fco                                           cell                    0.076
+ lt0_28|lt0_27.fci (lt0_c27)                                 net (fanout = 1)        0.000               
+ lt0_28|lt0_27.fco                                           cell                    0.076
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ adc2_encA_reg_DO.ce (n1)                                    net (fanout = 20)       1.302               
+ adc2_encA_reg_DO                                            path2reg                0.000
+ Arrival time                                                                       10.163 (5 lvl)
+                                                                                          (72% logic, 28% net)
+
+ adc2_encA_reg_DO.osclk                                                              1.016
+ capture clock edge                                                                  3.750
+ cell setup                                                                         -0.061
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       4.705
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -5.458 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -5.395 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ EndPoint:                adc2_encA_reg_DO.ce (falling edge triggered by clock main_clock/pll_inst.clkc[1])
+ Clock group:             main_clock/pll_inst.refclk                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.500
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.fco                                       cell                    0.874
+ add0/u3_al_u456.fci (add0/c3)                               net (fanout = 1)        0.000               
+ add0/u3_al_u456.fco                                         cell                    0.138
+ add0/u7_al_u457.fci (add0/c7)                               net (fanout = 1)        0.000               
+ add0/u7_al_u457.fco                                         cell                    0.138
+ add0/u11_al_u458.fci (add0/c11)                             net (fanout = 1)        0.000               
+ add0/u11_al_u458.fco                                        cell                    0.138
+ add0/u15_al_u459.fci (add0/c15)                             net (fanout = 1)        0.000               
+ add0/u15_al_u459.fco                                        cell                    0.138
+ add0/u19_al_u460.fci (add0/c19)                             net (fanout = 1)        0.000               
+ add0/u19_al_u460.fco                                        cell                    0.138
+ add0/u23_al_u461.fci (add0/c23)                             net (fanout = 1)        0.000               
+ add0/u23_al_u461.fco                                        cell                    0.138
+ add0/u27_al_u462.fci (add0/c27)                             net (fanout = 1)        0.000               
+ add0/u27_al_u462.fx[0]                                      cell                    0.405
+ lt0_28|lt0_27.b[1] (n11[28])                                net (fanout = 2)        0.787               
+ lt0_28|lt0_27.fco                                           cell                    0.564
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ adc2_encA_reg_DO.ce (n1)                                    net (fanout = 20)       1.302               
+ adc2_encA_reg_DO                                            path2reg                0.000
+ Arrival time                                                                       10.100 (5 lvl)
+                                                                                          (72% logic, 28% net)
+
+ adc2_encA_reg_DO.osclk                                                              1.016
+ capture clock edge                                                                  3.750
+ cell setup                                                                         -0.061
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       4.705
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -5.395 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -5.382 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ EndPoint:                adc2_encA_reg_DO.ce (falling edge triggered by clock main_clock/pll_inst.clkc[1])
+ Clock group:             main_clock/pll_inst.refclk                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.500
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.f[1]                                      cell                    1.012
+ lt0_2|lt0_1.b[0] (n11[1])                                   net (fanout = 2)        0.790               
+ lt0_2|lt0_1.fco                                             cell                    0.655
+ lt0_4|lt0_3.fci (lt0_c3)                                    net (fanout = 1)        0.000               
+ lt0_4|lt0_3.fco                                             cell                    0.076
+ lt0_6|lt0_5.fci (lt0_c5)                                    net (fanout = 1)        0.000               
+ lt0_6|lt0_5.fco                                             cell                    0.076
+ lt0_8|lt0_7.fci (lt0_c7)                                    net (fanout = 1)        0.000               
+ lt0_8|lt0_7.fco                                             cell                    0.076
+ lt0_10|lt0_9.fci (lt0_c9)                                   net (fanout = 1)        0.000               
+ lt0_10|lt0_9.fco                                            cell                    0.076
+ lt0_12|lt0_11.fci (lt0_c11)                                 net (fanout = 1)        0.000               
+ lt0_12|lt0_11.fco                                           cell                    0.076
+ lt0_14|lt0_13.fci (lt0_c13)                                 net (fanout = 1)        0.000               
+ lt0_14|lt0_13.fco                                           cell                    0.076
+ lt0_16|lt0_15.fci (lt0_c15)                                 net (fanout = 1)        0.000               
+ lt0_16|lt0_15.fco                                           cell                    0.076
+ lt0_18|lt0_17.fci (lt0_c17)                                 net (fanout = 1)        0.000               
+ lt0_18|lt0_17.fco                                           cell                    0.076
+ lt0_20|lt0_19.fci (lt0_c19)                                 net (fanout = 1)        0.000               
+ lt0_20|lt0_19.fco                                           cell                    0.076
+ lt0_22|lt0_21.fci (lt0_c21)                                 net (fanout = 1)        0.000               
+ lt0_22|lt0_21.fco                                           cell                    0.076
+ lt0_24|lt0_23.fci (lt0_c23)                                 net (fanout = 1)        0.000               
+ lt0_24|lt0_23.fco                                           cell                    0.076
+ lt0_26|lt0_25.fci (lt0_c25)                                 net (fanout = 1)        0.000               
+ lt0_26|lt0_25.fco                                           cell                    0.076
+ lt0_28|lt0_27.fci (lt0_c27)                                 net (fanout = 1)        0.000               
+ lt0_28|lt0_27.fco                                           cell                    0.076
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ adc2_encA_reg_DO.ce (n1)                                    net (fanout = 20)       1.302               
+ adc2_encA_reg_DO                                            path2reg                0.000
+ Arrival time                                                                       10.087 (4 lvl)
+                                                                                          (72% logic, 28% net)
+
+ adc2_encA_reg_DO.osclk                                                              1.016
+ capture clock edge                                                                  3.750
+ cell setup                                                                         -0.061
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       4.705
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -5.382 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point adc1_encB_reg|adc2_encB_reg (543 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)     -5.316 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ EndPoint:                adc1_encB_reg|adc2_encB_reg.ce (falling edge triggered by clock main_clock/pll_inst.clkc[1])
+ Clock group:             main_clock/pll_inst.refclk                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.500
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.fco                                       cell                    0.874
+ add0/u3_al_u456.fci (add0/c3)                               net (fanout = 1)        0.000               
+ add0/u3_al_u456.fco                                         cell                    0.138
+ add0/u7_al_u457.fci (add0/c7)                               net (fanout = 1)        0.000               
+ add0/u7_al_u457.fx[1]                                       cell                    0.474
+ lt0_10|lt0_9.b[1] (n11[10])                                 net (fanout = 2)        0.787               
+ lt0_10|lt0_9.fco                                            cell                    0.564
+ lt0_12|lt0_11.fci (lt0_c11)                                 net (fanout = 1)        0.000               
+ lt0_12|lt0_11.fco                                           cell                    0.076
+ lt0_14|lt0_13.fci (lt0_c13)                                 net (fanout = 1)        0.000               
+ lt0_14|lt0_13.fco                                           cell                    0.076
+ lt0_16|lt0_15.fci (lt0_c15)                                 net (fanout = 1)        0.000               
+ lt0_16|lt0_15.fco                                           cell                    0.076
+ lt0_18|lt0_17.fci (lt0_c17)                                 net (fanout = 1)        0.000               
+ lt0_18|lt0_17.fco                                           cell                    0.076
+ lt0_20|lt0_19.fci (lt0_c19)                                 net (fanout = 1)        0.000               
+ lt0_20|lt0_19.fco                                           cell                    0.076
+ lt0_22|lt0_21.fci (lt0_c21)                                 net (fanout = 1)        0.000               
+ lt0_22|lt0_21.fco                                           cell                    0.076
+ lt0_24|lt0_23.fci (lt0_c23)                                 net (fanout = 1)        0.000               
+ lt0_24|lt0_23.fco                                           cell                    0.076
+ lt0_26|lt0_25.fci (lt0_c25)                                 net (fanout = 1)        0.000               
+ lt0_26|lt0_25.fco                                           cell                    0.076
+ lt0_28|lt0_27.fci (lt0_c27)                                 net (fanout = 1)        0.000               
+ lt0_28|lt0_27.fco                                           cell                    0.076
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ adc1_encB_reg|adc2_encB_reg.ce (n1)                         net (fanout = 20)       1.215               
+ adc1_encB_reg|adc2_encB_reg                                 path2reg                0.087
+ Arrival time                                                                       10.163 (5 lvl)
+                                                                                          (73% logic, 27% net)
+
+ adc1_encB_reg|adc2_encB_reg.clk                                                     1.213
+ capture clock edge                                                                  3.750
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       4.847
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -5.316 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -5.253 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ EndPoint:                adc1_encB_reg|adc2_encB_reg.ce (falling edge triggered by clock main_clock/pll_inst.clkc[1])
+ Clock group:             main_clock/pll_inst.refclk                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.500
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.fco                                       cell                    0.874
+ add0/u3_al_u456.fci (add0/c3)                               net (fanout = 1)        0.000               
+ add0/u3_al_u456.fco                                         cell                    0.138
+ add0/u7_al_u457.fci (add0/c7)                               net (fanout = 1)        0.000               
+ add0/u7_al_u457.fco                                         cell                    0.138
+ add0/u11_al_u458.fci (add0/c11)                             net (fanout = 1)        0.000               
+ add0/u11_al_u458.fco                                        cell                    0.138
+ add0/u15_al_u459.fci (add0/c15)                             net (fanout = 1)        0.000               
+ add0/u15_al_u459.fco                                        cell                    0.138
+ add0/u19_al_u460.fci (add0/c19)                             net (fanout = 1)        0.000               
+ add0/u19_al_u460.fco                                        cell                    0.138
+ add0/u23_al_u461.fci (add0/c23)                             net (fanout = 1)        0.000               
+ add0/u23_al_u461.fco                                        cell                    0.138
+ add0/u27_al_u462.fci (add0/c27)                             net (fanout = 1)        0.000               
+ add0/u27_al_u462.fx[0]                                      cell                    0.405
+ lt0_28|lt0_27.b[1] (n11[28])                                net (fanout = 2)        0.787               
+ lt0_28|lt0_27.fco                                           cell                    0.564
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ adc1_encB_reg|adc2_encB_reg.ce (n1)                         net (fanout = 20)       1.215               
+ adc1_encB_reg|adc2_encB_reg                                 path2reg                0.087
+ Arrival time                                                                       10.100 (5 lvl)
+                                                                                          (73% logic, 27% net)
+
+ adc1_encB_reg|adc2_encB_reg.clk                                                     1.213
+ capture clock edge                                                                  3.750
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       4.847
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -5.253 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -5.240 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ EndPoint:                adc1_encB_reg|adc2_encB_reg.ce (falling edge triggered by clock main_clock/pll_inst.clkc[1])
+ Clock group:             main_clock/pll_inst.refclk                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.500
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.f[1]                                      cell                    1.012
+ lt0_2|lt0_1.b[0] (n11[1])                                   net (fanout = 2)        0.790               
+ lt0_2|lt0_1.fco                                             cell                    0.655
+ lt0_4|lt0_3.fci (lt0_c3)                                    net (fanout = 1)        0.000               
+ lt0_4|lt0_3.fco                                             cell                    0.076
+ lt0_6|lt0_5.fci (lt0_c5)                                    net (fanout = 1)        0.000               
+ lt0_6|lt0_5.fco                                             cell                    0.076
+ lt0_8|lt0_7.fci (lt0_c7)                                    net (fanout = 1)        0.000               
+ lt0_8|lt0_7.fco                                             cell                    0.076
+ lt0_10|lt0_9.fci (lt0_c9)                                   net (fanout = 1)        0.000               
+ lt0_10|lt0_9.fco                                            cell                    0.076
+ lt0_12|lt0_11.fci (lt0_c11)                                 net (fanout = 1)        0.000               
+ lt0_12|lt0_11.fco                                           cell                    0.076
+ lt0_14|lt0_13.fci (lt0_c13)                                 net (fanout = 1)        0.000               
+ lt0_14|lt0_13.fco                                           cell                    0.076
+ lt0_16|lt0_15.fci (lt0_c15)                                 net (fanout = 1)        0.000               
+ lt0_16|lt0_15.fco                                           cell                    0.076
+ lt0_18|lt0_17.fci (lt0_c17)                                 net (fanout = 1)        0.000               
+ lt0_18|lt0_17.fco                                           cell                    0.076
+ lt0_20|lt0_19.fci (lt0_c19)                                 net (fanout = 1)        0.000               
+ lt0_20|lt0_19.fco                                           cell                    0.076
+ lt0_22|lt0_21.fci (lt0_c21)                                 net (fanout = 1)        0.000               
+ lt0_22|lt0_21.fco                                           cell                    0.076
+ lt0_24|lt0_23.fci (lt0_c23)                                 net (fanout = 1)        0.000               
+ lt0_24|lt0_23.fco                                           cell                    0.076
+ lt0_26|lt0_25.fci (lt0_c25)                                 net (fanout = 1)        0.000               
+ lt0_26|lt0_25.fco                                           cell                    0.076
+ lt0_28|lt0_27.fci (lt0_c27)                                 net (fanout = 1)        0.000               
+ lt0_28|lt0_27.fco                                           cell                    0.076
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ adc1_encB_reg|adc2_encB_reg.ce (n1)                         net (fanout = 20)       1.215               
+ adc1_encB_reg|adc2_encB_reg                                 path2reg                0.087
+ Arrival time                                                                       10.087 (4 lvl)
+                                                                                          (73% logic, 27% net)
+
+ adc1_encB_reg|adc2_encB_reg.clk                                                     1.213
+ capture clock edge                                                                  3.750
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       4.847
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -5.240 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Hold checks:
+---------------------------------------------------------------------------------------------------------
+Paths for end point adc1_encB_reg|adc2_encB_reg (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.698 ns                                                        
+ StartPoint:              adc1_encB_reg|adc2_encB_reg.clk (falling edge triggered by clock main_clock/pll_inst.clkc[1])
+ EndPoint:                adc1_encB_reg|adc2_encB_reg.a[1] (falling edge triggered by clock main_clock/pll_inst.clkc[1])
+ Clock group:             main_clock/pll_inst.refclk                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ adc1_encB_reg|adc2_encB_reg.clk                             clock                   1.213
+ launch clock edge                                           clock                   3.750
+ adc1_encB_reg|adc2_encB_reg.q[1]                            cell                    0.140
+ adc1_encB_reg|adc2_encB_reg.a[1] (o_adc1_encB_pad)          net (fanout = 3)        0.154  zaklad.v(107)
+ adc1_encB_reg|adc2_encB_reg                                 path2reg1               0.478
+ Arrival time                                                                        5.735 (1 lvl)
+                                                                                          (98% logic, 2% net)
+
+ adc1_encB_reg|adc2_encB_reg.clk                                                     1.464
+ capture clock edge                                                                  3.750
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.251
+ Required time                                                                       5.037
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.698 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point adc1_encB_reg|adc2_encB_reg (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.698 ns                                                        
+ StartPoint:              adc1_encB_reg|adc2_encB_reg.clk (falling edge triggered by clock main_clock/pll_inst.clkc[1])
+ EndPoint:                adc1_encB_reg|adc2_encB_reg.a[0] (falling edge triggered by clock main_clock/pll_inst.clkc[1])
+ Clock group:             main_clock/pll_inst.refclk                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ adc1_encB_reg|adc2_encB_reg.clk                             clock                   1.213
+ launch clock edge                                           clock                   3.750
+ adc1_encB_reg|adc2_encB_reg.q[0]                            cell                    0.140
+ adc1_encB_reg|adc2_encB_reg.a[0] (o_adc2_encB_pad)          net (fanout = 3)        0.154  zaklad.v(109)
+ adc1_encB_reg|adc2_encB_reg                                 path2reg0               0.478
+ Arrival time                                                                        5.735 (1 lvl)
+                                                                                          (98% logic, 2% net)
+
+ adc1_encB_reg|adc2_encB_reg.clk                                                     1.464
+ capture clock edge                                                                  3.750
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.251
+ Required time                                                                       5.037
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.698 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point adc2_encA_reg_DO (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.982 ns                                                        
+ StartPoint:              adc1_encB_reg|adc2_encB_reg.clk (falling edge triggered by clock main_clock/pll_inst.clkc[1])
+ EndPoint:                adc2_encA_reg_DO.do[0] (falling edge triggered by clock main_clock/pll_inst.clkc[1])
+ Clock group:             main_clock/pll_inst.refclk                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ adc1_encB_reg|adc2_encB_reg.clk                             clock                   1.213
+ launch clock edge                                           clock                   3.750
+ adc1_encB_reg|adc2_encB_reg.q[0]                            cell                    0.140
+ adc2_encA_reg_DO.do[0] (o_adc2_encB_pad)                    net (fanout = 3)        0.648  zaklad.v(109)
+ adc2_encA_reg_DO                                            path2reg                0.000
+ Arrival time                                                                        5.751 (1 lvl)
+                                                                                          (89% logic, 11% net)
+
+ adc2_encA_reg_DO.osclk                                                              1.246
+ capture clock edge                                                                  3.750
+ cell hold                                                                          -0.060
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                       -0.167
+ Required time                                                                       4.769
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.982 ns
+
+---------------------------------------------------------------------------------------------------------
+
+
+=========================================================================================================
+Timing constraint:        clock: main_clock/pll_inst.clkc[0]                              
+Clock = main_clock/pll_inst.clkc[0], period 5ns, rising at 0ns, falling at 2.5ns
+
+224 endpoints analyzed totally, and 39124 paths analyzed
+67 errors detected : 67 setup errors (TNS = -213.321), 0 hold errors (TNS = 0.000)
+Minimum period is 10.943ns
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point add0/ucin_al_u455 (543 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)     -5.943 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock clk_200MHz)
+ EndPoint:                add0/ucin_al_u455.sr (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ Clock group:             main_clock/pll_inst.refclk                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.000
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.fco                                       cell                    0.874
+ add0/u3_al_u456.fci (add0/c3)                               net (fanout = 1)        0.000               
+ add0/u3_al_u456.fco                                         cell                    0.138
+ add0/u7_al_u457.fci (add0/c7)                               net (fanout = 1)        0.000               
+ add0/u7_al_u457.fx[1]                                       cell                    0.474
+ lt0_10|lt0_9.b[1] (n11[10])                                 net (fanout = 2)        0.787               
+ lt0_10|lt0_9.fco                                            cell                    0.564
+ lt0_12|lt0_11.fci (lt0_c11)                                 net (fanout = 1)        0.000               
+ lt0_12|lt0_11.fco                                           cell                    0.076
+ lt0_14|lt0_13.fci (lt0_c13)                                 net (fanout = 1)        0.000               
+ lt0_14|lt0_13.fco                                           cell                    0.076
+ lt0_16|lt0_15.fci (lt0_c15)                                 net (fanout = 1)        0.000               
+ lt0_16|lt0_15.fco                                           cell                    0.076
+ lt0_18|lt0_17.fci (lt0_c17)                                 net (fanout = 1)        0.000               
+ lt0_18|lt0_17.fco                                           cell                    0.076
+ lt0_20|lt0_19.fci (lt0_c19)                                 net (fanout = 1)        0.000               
+ lt0_20|lt0_19.fco                                           cell                    0.076
+ lt0_22|lt0_21.fci (lt0_c21)                                 net (fanout = 1)        0.000               
+ lt0_22|lt0_21.fco                                           cell                    0.076
+ lt0_24|lt0_23.fci (lt0_c23)                                 net (fanout = 1)        0.000               
+ lt0_24|lt0_23.fco                                           cell                    0.076
+ lt0_26|lt0_25.fci (lt0_c25)                                 net (fanout = 1)        0.000               
+ lt0_26|lt0_25.fco                                           cell                    0.076
+ lt0_28|lt0_27.fci (lt0_c27)                                 net (fanout = 1)        0.000               
+ lt0_28|lt0_27.fco                                           cell                    0.076
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ add0/ucin_al_u455.sr (n1)                                   net (fanout = 20)       1.022               
+ add0/ucin_al_u455                                           path2reg                0.086
+ Arrival time                                                                        9.469 (5 lvl)
+                                                                                          (73% logic, 27% net)
+
+ add0/ucin_al_u455.clk                                                               1.213
+ capture clock edge                                                                  2.500
+ cell setup                                                                         -0.187
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       3.526
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -5.943 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -5.880 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock clk_200MHz)
+ EndPoint:                add0/ucin_al_u455.sr (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ Clock group:             main_clock/pll_inst.refclk                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.000
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.fco                                       cell                    0.874
+ add0/u3_al_u456.fci (add0/c3)                               net (fanout = 1)        0.000               
+ add0/u3_al_u456.fco                                         cell                    0.138
+ add0/u7_al_u457.fci (add0/c7)                               net (fanout = 1)        0.000               
+ add0/u7_al_u457.fco                                         cell                    0.138
+ add0/u11_al_u458.fci (add0/c11)                             net (fanout = 1)        0.000               
+ add0/u11_al_u458.fco                                        cell                    0.138
+ add0/u15_al_u459.fci (add0/c15)                             net (fanout = 1)        0.000               
+ add0/u15_al_u459.fco                                        cell                    0.138
+ add0/u19_al_u460.fci (add0/c19)                             net (fanout = 1)        0.000               
+ add0/u19_al_u460.fco                                        cell                    0.138
+ add0/u23_al_u461.fci (add0/c23)                             net (fanout = 1)        0.000               
+ add0/u23_al_u461.fco                                        cell                    0.138
+ add0/u27_al_u462.fci (add0/c27)                             net (fanout = 1)        0.000               
+ add0/u27_al_u462.fx[0]                                      cell                    0.405
+ lt0_28|lt0_27.b[1] (n11[28])                                net (fanout = 2)        0.787               
+ lt0_28|lt0_27.fco                                           cell                    0.564
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ add0/ucin_al_u455.sr (n1)                                   net (fanout = 20)       1.022               
+ add0/ucin_al_u455                                           path2reg                0.086
+ Arrival time                                                                        9.406 (5 lvl)
+                                                                                          (73% logic, 27% net)
+
+ add0/ucin_al_u455.clk                                                               1.213
+ capture clock edge                                                                  2.500
+ cell setup                                                                         -0.187
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       3.526
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -5.880 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -5.867 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock clk_200MHz)
+ EndPoint:                add0/ucin_al_u455.sr (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ Clock group:             main_clock/pll_inst.refclk                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.000
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.f[1]                                      cell                    1.012
+ lt0_2|lt0_1.b[0] (n11[1])                                   net (fanout = 2)        0.790               
+ lt0_2|lt0_1.fco                                             cell                    0.655
+ lt0_4|lt0_3.fci (lt0_c3)                                    net (fanout = 1)        0.000               
+ lt0_4|lt0_3.fco                                             cell                    0.076
+ lt0_6|lt0_5.fci (lt0_c5)                                    net (fanout = 1)        0.000               
+ lt0_6|lt0_5.fco                                             cell                    0.076
+ lt0_8|lt0_7.fci (lt0_c7)                                    net (fanout = 1)        0.000               
+ lt0_8|lt0_7.fco                                             cell                    0.076
+ lt0_10|lt0_9.fci (lt0_c9)                                   net (fanout = 1)        0.000               
+ lt0_10|lt0_9.fco                                            cell                    0.076
+ lt0_12|lt0_11.fci (lt0_c11)                                 net (fanout = 1)        0.000               
+ lt0_12|lt0_11.fco                                           cell                    0.076
+ lt0_14|lt0_13.fci (lt0_c13)                                 net (fanout = 1)        0.000               
+ lt0_14|lt0_13.fco                                           cell                    0.076
+ lt0_16|lt0_15.fci (lt0_c15)                                 net (fanout = 1)        0.000               
+ lt0_16|lt0_15.fco                                           cell                    0.076
+ lt0_18|lt0_17.fci (lt0_c17)                                 net (fanout = 1)        0.000               
+ lt0_18|lt0_17.fco                                           cell                    0.076
+ lt0_20|lt0_19.fci (lt0_c19)                                 net (fanout = 1)        0.000               
+ lt0_20|lt0_19.fco                                           cell                    0.076
+ lt0_22|lt0_21.fci (lt0_c21)                                 net (fanout = 1)        0.000               
+ lt0_22|lt0_21.fco                                           cell                    0.076
+ lt0_24|lt0_23.fci (lt0_c23)                                 net (fanout = 1)        0.000               
+ lt0_24|lt0_23.fco                                           cell                    0.076
+ lt0_26|lt0_25.fci (lt0_c25)                                 net (fanout = 1)        0.000               
+ lt0_26|lt0_25.fco                                           cell                    0.076
+ lt0_28|lt0_27.fci (lt0_c27)                                 net (fanout = 1)        0.000               
+ lt0_28|lt0_27.fco                                           cell                    0.076
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ add0/ucin_al_u455.sr (n1)                                   net (fanout = 20)       1.022               
+ add0/ucin_al_u455                                           path2reg                0.086
+ Arrival time                                                                        9.393 (4 lvl)
+                                                                                          (73% logic, 27% net)
+
+ add0/ucin_al_u455.clk                                                               1.213
+ capture clock edge                                                                  2.500
+ cell setup                                                                         -0.187
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       3.526
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -5.867 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point sample_write_clock_reg (543 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)     -5.887 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock clk_200MHz)
+ EndPoint:                sample_write_clock_reg.ce (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ Clock group:             main_clock/pll_inst.refclk                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.000
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.fco                                       cell                    0.874
+ add0/u3_al_u456.fci (add0/c3)                               net (fanout = 1)        0.000               
+ add0/u3_al_u456.fco                                         cell                    0.138
+ add0/u7_al_u457.fci (add0/c7)                               net (fanout = 1)        0.000               
+ add0/u7_al_u457.fx[1]                                       cell                    0.474
+ lt0_10|lt0_9.b[1] (n11[10])                                 net (fanout = 2)        0.787               
+ lt0_10|lt0_9.fco                                            cell                    0.564
+ lt0_12|lt0_11.fci (lt0_c11)                                 net (fanout = 1)        0.000               
+ lt0_12|lt0_11.fco                                           cell                    0.076
+ lt0_14|lt0_13.fci (lt0_c13)                                 net (fanout = 1)        0.000               
+ lt0_14|lt0_13.fco                                           cell                    0.076
+ lt0_16|lt0_15.fci (lt0_c15)                                 net (fanout = 1)        0.000               
+ lt0_16|lt0_15.fco                                           cell                    0.076
+ lt0_18|lt0_17.fci (lt0_c17)                                 net (fanout = 1)        0.000               
+ lt0_18|lt0_17.fco                                           cell                    0.076
+ lt0_20|lt0_19.fci (lt0_c19)                                 net (fanout = 1)        0.000               
+ lt0_20|lt0_19.fco                                           cell                    0.076
+ lt0_22|lt0_21.fci (lt0_c21)                                 net (fanout = 1)        0.000               
+ lt0_22|lt0_21.fco                                           cell                    0.076
+ lt0_24|lt0_23.fci (lt0_c23)                                 net (fanout = 1)        0.000               
+ lt0_24|lt0_23.fco                                           cell                    0.076
+ lt0_26|lt0_25.fci (lt0_c25)                                 net (fanout = 1)        0.000               
+ lt0_26|lt0_25.fco                                           cell                    0.076
+ lt0_28|lt0_27.fci (lt0_c27)                                 net (fanout = 1)        0.000               
+ lt0_28|lt0_27.fco                                           cell                    0.076
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ sample_write_clock_reg.ce (n1)                              net (fanout = 20)       1.036               
+ sample_write_clock_reg                                      path2reg                0.087
+ Arrival time                                                                        9.484 (5 lvl)
+                                                                                          (73% logic, 27% net)
+
+ sample_write_clock_reg.clk                                                          1.213
+ capture clock edge                                                                  2.500
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       3.597
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -5.887 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -5.824 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock clk_200MHz)
+ EndPoint:                sample_write_clock_reg.ce (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ Clock group:             main_clock/pll_inst.refclk                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.000
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.fco                                       cell                    0.874
+ add0/u3_al_u456.fci (add0/c3)                               net (fanout = 1)        0.000               
+ add0/u3_al_u456.fco                                         cell                    0.138
+ add0/u7_al_u457.fci (add0/c7)                               net (fanout = 1)        0.000               
+ add0/u7_al_u457.fco                                         cell                    0.138
+ add0/u11_al_u458.fci (add0/c11)                             net (fanout = 1)        0.000               
+ add0/u11_al_u458.fco                                        cell                    0.138
+ add0/u15_al_u459.fci (add0/c15)                             net (fanout = 1)        0.000               
+ add0/u15_al_u459.fco                                        cell                    0.138
+ add0/u19_al_u460.fci (add0/c19)                             net (fanout = 1)        0.000               
+ add0/u19_al_u460.fco                                        cell                    0.138
+ add0/u23_al_u461.fci (add0/c23)                             net (fanout = 1)        0.000               
+ add0/u23_al_u461.fco                                        cell                    0.138
+ add0/u27_al_u462.fci (add0/c27)                             net (fanout = 1)        0.000               
+ add0/u27_al_u462.fx[0]                                      cell                    0.405
+ lt0_28|lt0_27.b[1] (n11[28])                                net (fanout = 2)        0.787               
+ lt0_28|lt0_27.fco                                           cell                    0.564
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ sample_write_clock_reg.ce (n1)                              net (fanout = 20)       1.036               
+ sample_write_clock_reg                                      path2reg                0.087
+ Arrival time                                                                        9.421 (5 lvl)
+                                                                                          (73% logic, 27% net)
+
+ sample_write_clock_reg.clk                                                          1.213
+ capture clock edge                                                                  2.500
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       3.597
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -5.824 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -5.811 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock clk_200MHz)
+ EndPoint:                sample_write_clock_reg.ce (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ Clock group:             main_clock/pll_inst.refclk                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.000
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.f[1]                                      cell                    1.012
+ lt0_2|lt0_1.b[0] (n11[1])                                   net (fanout = 2)        0.790               
+ lt0_2|lt0_1.fco                                             cell                    0.655
+ lt0_4|lt0_3.fci (lt0_c3)                                    net (fanout = 1)        0.000               
+ lt0_4|lt0_3.fco                                             cell                    0.076
+ lt0_6|lt0_5.fci (lt0_c5)                                    net (fanout = 1)        0.000               
+ lt0_6|lt0_5.fco                                             cell                    0.076
+ lt0_8|lt0_7.fci (lt0_c7)                                    net (fanout = 1)        0.000               
+ lt0_8|lt0_7.fco                                             cell                    0.076
+ lt0_10|lt0_9.fci (lt0_c9)                                   net (fanout = 1)        0.000               
+ lt0_10|lt0_9.fco                                            cell                    0.076
+ lt0_12|lt0_11.fci (lt0_c11)                                 net (fanout = 1)        0.000               
+ lt0_12|lt0_11.fco                                           cell                    0.076
+ lt0_14|lt0_13.fci (lt0_c13)                                 net (fanout = 1)        0.000               
+ lt0_14|lt0_13.fco                                           cell                    0.076
+ lt0_16|lt0_15.fci (lt0_c15)                                 net (fanout = 1)        0.000               
+ lt0_16|lt0_15.fco                                           cell                    0.076
+ lt0_18|lt0_17.fci (lt0_c17)                                 net (fanout = 1)        0.000               
+ lt0_18|lt0_17.fco                                           cell                    0.076
+ lt0_20|lt0_19.fci (lt0_c19)                                 net (fanout = 1)        0.000               
+ lt0_20|lt0_19.fco                                           cell                    0.076
+ lt0_22|lt0_21.fci (lt0_c21)                                 net (fanout = 1)        0.000               
+ lt0_22|lt0_21.fco                                           cell                    0.076
+ lt0_24|lt0_23.fci (lt0_c23)                                 net (fanout = 1)        0.000               
+ lt0_24|lt0_23.fco                                           cell                    0.076
+ lt0_26|lt0_25.fci (lt0_c25)                                 net (fanout = 1)        0.000               
+ lt0_26|lt0_25.fco                                           cell                    0.076
+ lt0_28|lt0_27.fci (lt0_c27)                                 net (fanout = 1)        0.000               
+ lt0_28|lt0_27.fco                                           cell                    0.076
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ sample_write_clock_reg.ce (n1)                              net (fanout = 20)       1.036               
+ sample_write_clock_reg                                      path2reg                0.087
+ Arrival time                                                                        9.408 (4 lvl)
+                                                                                          (73% logic, 27% net)
+
+ sample_write_clock_reg.clk                                                          1.213
+ capture clock edge                                                                  2.500
+ cell setup                                                                         -0.116
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       3.597
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -5.811 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point reg0_b15|reg0_b4 (543 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (setup check)     -5.776 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock clk_200MHz)
+ EndPoint:                reg0_b15|reg0_b4.sr (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ Clock group:             main_clock/pll_inst.refclk                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.000
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.fco                                       cell                    0.874
+ add0/u3_al_u456.fci (add0/c3)                               net (fanout = 1)        0.000               
+ add0/u3_al_u456.fco                                         cell                    0.138
+ add0/u7_al_u457.fci (add0/c7)                               net (fanout = 1)        0.000               
+ add0/u7_al_u457.fx[1]                                       cell                    0.474
+ lt0_10|lt0_9.b[1] (n11[10])                                 net (fanout = 2)        0.787               
+ lt0_10|lt0_9.fco                                            cell                    0.564
+ lt0_12|lt0_11.fci (lt0_c11)                                 net (fanout = 1)        0.000               
+ lt0_12|lt0_11.fco                                           cell                    0.076
+ lt0_14|lt0_13.fci (lt0_c13)                                 net (fanout = 1)        0.000               
+ lt0_14|lt0_13.fco                                           cell                    0.076
+ lt0_16|lt0_15.fci (lt0_c15)                                 net (fanout = 1)        0.000               
+ lt0_16|lt0_15.fco                                           cell                    0.076
+ lt0_18|lt0_17.fci (lt0_c17)                                 net (fanout = 1)        0.000               
+ lt0_18|lt0_17.fco                                           cell                    0.076
+ lt0_20|lt0_19.fci (lt0_c19)                                 net (fanout = 1)        0.000               
+ lt0_20|lt0_19.fco                                           cell                    0.076
+ lt0_22|lt0_21.fci (lt0_c21)                                 net (fanout = 1)        0.000               
+ lt0_22|lt0_21.fco                                           cell                    0.076
+ lt0_24|lt0_23.fci (lt0_c23)                                 net (fanout = 1)        0.000               
+ lt0_24|lt0_23.fco                                           cell                    0.076
+ lt0_26|lt0_25.fci (lt0_c25)                                 net (fanout = 1)        0.000               
+ lt0_26|lt0_25.fco                                           cell                    0.076
+ lt0_28|lt0_27.fci (lt0_c27)                                 net (fanout = 1)        0.000               
+ lt0_28|lt0_27.fco                                           cell                    0.076
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ reg0_b15|reg0_b4.sr (n1)                                    net (fanout = 20)       0.855               
+ reg0_b15|reg0_b4                                            path2reg                0.086
+ Arrival time                                                                        9.302 (5 lvl)
+                                                                                          (74% logic, 26% net)
+
+ reg0_b15|reg0_b4.clk                                                                1.213
+ capture clock edge                                                                  2.500
+ cell setup                                                                         -0.187
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       3.526
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -5.776 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -5.713 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock clk_200MHz)
+ EndPoint:                reg0_b15|reg0_b4.sr (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ Clock group:             main_clock/pll_inst.refclk                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.000
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.fco                                       cell                    0.874
+ add0/u3_al_u456.fci (add0/c3)                               net (fanout = 1)        0.000               
+ add0/u3_al_u456.fco                                         cell                    0.138
+ add0/u7_al_u457.fci (add0/c7)                               net (fanout = 1)        0.000               
+ add0/u7_al_u457.fco                                         cell                    0.138
+ add0/u11_al_u458.fci (add0/c11)                             net (fanout = 1)        0.000               
+ add0/u11_al_u458.fco                                        cell                    0.138
+ add0/u15_al_u459.fci (add0/c15)                             net (fanout = 1)        0.000               
+ add0/u15_al_u459.fco                                        cell                    0.138
+ add0/u19_al_u460.fci (add0/c19)                             net (fanout = 1)        0.000               
+ add0/u19_al_u460.fco                                        cell                    0.138
+ add0/u23_al_u461.fci (add0/c23)                             net (fanout = 1)        0.000               
+ add0/u23_al_u461.fco                                        cell                    0.138
+ add0/u27_al_u462.fci (add0/c27)                             net (fanout = 1)        0.000               
+ add0/u27_al_u462.fx[0]                                      cell                    0.405
+ lt0_28|lt0_27.b[1] (n11[28])                                net (fanout = 2)        0.787               
+ lt0_28|lt0_27.fco                                           cell                    0.564
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ reg0_b15|reg0_b4.sr (n1)                                    net (fanout = 20)       0.855               
+ reg0_b15|reg0_b4                                            path2reg                0.086
+ Arrival time                                                                        9.239 (5 lvl)
+                                                                                          (74% logic, 26% net)
+
+ reg0_b15|reg0_b4.clk                                                                1.213
+ capture clock edge                                                                  2.500
+ cell setup                                                                         -0.187
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       3.526
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -5.713 ns
+
+---------------------------------------------------------------------------------------------------------
+
+ Slack (setup check)     -5.700 ns                                                        
+ StartPoint:              add0/ucin_al_u455.clk (falling edge triggered by clock clk_200MHz)
+ EndPoint:                reg0_b15|reg0_b4.sr (falling edge triggered by clock main_clock/pll_inst.clkc[0])
+ Clock group:             main_clock/pll_inst.refclk                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ add0/ucin_al_u455.clk                                       clock                   1.464
+ launch clock edge                                           clock                   2.000
+ add0/ucin_al_u455.q[0]                                      cell                    0.146
+ add0/ucin_al_u455.b[0] (sample_rate_counter[0])             net (fanout = 1)        0.783  zaklad.v(196)
+ add0/ucin_al_u455.f[1]                                      cell                    1.012
+ lt0_2|lt0_1.b[0] (n11[1])                                   net (fanout = 2)        0.790               
+ lt0_2|lt0_1.fco                                             cell                    0.655
+ lt0_4|lt0_3.fci (lt0_c3)                                    net (fanout = 1)        0.000               
+ lt0_4|lt0_3.fco                                             cell                    0.076
+ lt0_6|lt0_5.fci (lt0_c5)                                    net (fanout = 1)        0.000               
+ lt0_6|lt0_5.fco                                             cell                    0.076
+ lt0_8|lt0_7.fci (lt0_c7)                                    net (fanout = 1)        0.000               
+ lt0_8|lt0_7.fco                                             cell                    0.076
+ lt0_10|lt0_9.fci (lt0_c9)                                   net (fanout = 1)        0.000               
+ lt0_10|lt0_9.fco                                            cell                    0.076
+ lt0_12|lt0_11.fci (lt0_c11)                                 net (fanout = 1)        0.000               
+ lt0_12|lt0_11.fco                                           cell                    0.076
+ lt0_14|lt0_13.fci (lt0_c13)                                 net (fanout = 1)        0.000               
+ lt0_14|lt0_13.fco                                           cell                    0.076
+ lt0_16|lt0_15.fci (lt0_c15)                                 net (fanout = 1)        0.000               
+ lt0_16|lt0_15.fco                                           cell                    0.076
+ lt0_18|lt0_17.fci (lt0_c17)                                 net (fanout = 1)        0.000               
+ lt0_18|lt0_17.fco                                           cell                    0.076
+ lt0_20|lt0_19.fci (lt0_c19)                                 net (fanout = 1)        0.000               
+ lt0_20|lt0_19.fco                                           cell                    0.076
+ lt0_22|lt0_21.fci (lt0_c21)                                 net (fanout = 1)        0.000               
+ lt0_22|lt0_21.fco                                           cell                    0.076
+ lt0_24|lt0_23.fci (lt0_c23)                                 net (fanout = 1)        0.000               
+ lt0_24|lt0_23.fco                                           cell                    0.076
+ lt0_26|lt0_25.fci (lt0_c25)                                 net (fanout = 1)        0.000               
+ lt0_26|lt0_25.fco                                           cell                    0.076
+ lt0_28|lt0_27.fci (lt0_c27)                                 net (fanout = 1)        0.000               
+ lt0_28|lt0_27.fco                                           cell                    0.076
+ lt0_30|lt0_29.fci (lt0_c29)                                 net (fanout = 1)        0.000               
+ lt0_30|lt0_29.fco                                           cell                    0.076
+ lt0_cout|lt0_31.fci (lt0_c31)                               net (fanout = 1)        0.000               
+ lt0_cout|lt0_31.f[1]                                        cell                    0.371
+ reg0_b15|reg0_b4.sr (n1)                                    net (fanout = 20)       0.855               
+ reg0_b15|reg0_b4                                            path2reg                0.086
+ Arrival time                                                                        9.226 (4 lvl)
+                                                                                          (74% logic, 26% net)
+
+ reg0_b15|reg0_b4.clk                                                                1.213
+ capture clock edge                                                                  2.500
+ cell setup                                                                         -0.187
+ clock uncertainty                                                                  -0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       3.526
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                           -5.700 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Hold checks:
+---------------------------------------------------------------------------------------------------------
+Paths for end point peripheral_clock/clk_out_reg (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.384 ns                                                        
+ StartPoint:              _al_u451|peripheral_clock/count_reg[0].clk (rising edge triggered by clock clk_200MHz)
+ EndPoint:                peripheral_clock/clk_out_reg.ce (rising edge triggered by clock main_clock/pll_inst.clkc[0])
+ Clock group:             main_clock/pll_inst.refclk                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u451|peripheral_clock/count_reg[0].clk                  clock                   1.272
+ launch clock edge                                           clock                   0.000
+ _al_u451|peripheral_clock/count_reg[0].q[0]                 cell                    0.140
+ peripheral_clock/clk_out_reg.ce (peripheral_clock/n0)       net (fanout = 3)        0.435               
+ peripheral_clock/clk_out_reg                                path2reg                0.084
+ Arrival time                                                                        1.931 (1 lvl)
+                                                                                          (78% logic, 22% net)
+
+ peripheral_clock/clk_out_reg.clk                                                    1.473
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       1.547
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.384 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point _al_u451|peripheral_clock/count_reg[0] (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.447 ns                                                        
+ StartPoint:              _al_u451|peripheral_clock/count_reg[0].clk (rising edge triggered by clock clk_200MHz)
+ EndPoint:                _al_u451|peripheral_clock/count_reg[0].sr (rising edge triggered by clock main_clock/pll_inst.clkc[0])
+ Clock group:             main_clock/pll_inst.refclk                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u451|peripheral_clock/count_reg[0].clk                  clock                   1.272
+ launch clock edge                                           clock                   0.000
+ _al_u451|peripheral_clock/count_reg[0].q[0]                 cell                    0.140
+ _al_u451|peripheral_clock/count_reg[0].sr (peripheral_clock/n0) net (fanout = 3)        0.435               
+ _al_u451|peripheral_clock/count_reg[0]                      path2reg                0.083
+ Arrival time                                                                        1.930 (1 lvl)
+                                                                                          (78% logic, 22% net)
+
+ _al_u451|peripheral_clock/count_reg[0].clk                                          1.473
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.010
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       1.483
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.447 ns
+
+---------------------------------------------------------------------------------------------------------
+
+Paths for end point _al_u434|sampling_triggered_reg (1 paths)
+---------------------------------------------------------------------------------------------------------
+ Slack (hold check)       0.518 ns                                                        
+ StartPoint:              _al_u434|sampling_triggered_reg.clk (rising edge triggered by clock clk_200MHz)
+ EndPoint:                _al_u434|sampling_triggered_reg.a[0] (rising edge triggered by clock main_clock/pll_inst.clkc[0])
+ Clock group:             main_clock/pll_inst.refclk                                      
+
+ Point                                                       Type                     Incr           Info
+---------------------------------------------------------------------------------------------------------
+ _al_u434|sampling_triggered_reg.clk                         clock                   1.272
+ launch clock edge                                           clock                   0.000
+ _al_u434|sampling_triggered_reg.q[0]                        cell                    0.140
+ _al_u434|sampling_triggered_reg.a[0] (sampling_triggered)   net (fanout = 5)        0.175  zaklad.v(210)
+ _al_u434|sampling_triggered_reg                             path2reg0               0.478
+ Arrival time                                                                        2.065 (1 lvl)
+                                                                                          (92% logic, 8% net)
+
+ _al_u434|sampling_triggered_reg.clk                                                 1.473
+ capture clock edge                                                                  0.000
+ cell hold                                                                           0.074
+ clock uncertainty                                                                   0.000
+ clock recovergence pessimism                                                        0.000
+ Required time                                                                       1.547
+---------------------------------------------------------------------------------------------------------
+ Slack                                                                            0.518 ns
+
+---------------------------------------------------------------------------------------------------------
+
+
+=========================================================================================================
+Timing summary:                                                                           
+---------------------------------------------------------------------------------------------------------
+Constraint path number: 84772 (STA coverage = 8.66%)
+Timing violations: 107 setup errors, and 0 hold errors.
+Minimal setup slack: -5.943, minimal hold slack: 0.384
+
+Timing group statistics: 
+	Clock constraints: 
+	  Clock Name                                  Min Period     Max Freq           Skew      Fanout            TNS
+	  clk_200MHz (200.000MHz)                        6.943ns     144.030MHz        0.251ns        20      -46.437ns
+	  main_clock/pll_inst.clkc[0] (200.000MHz)       10.943ns      91.383MHz        0.251ns        20     -213.321ns
+	  main_clock/pll_inst.clkc[1] (200.000MHz)       10.521ns      95.048MHz        0.281ns         3      -31.090ns
+	Minimum input arrival time before clock: no constraint path
+	Maximum output required time after clock: no constraint path
+	Maximum combinational path delay: no constraint path
+
+
+Warning: there are 3 clock nets without clock constraints.
+	clk_50MHz
+	i_mcu_clk_pad
+	sample_write_clock
+
+---------------------------------------------------------------------------------------------------------

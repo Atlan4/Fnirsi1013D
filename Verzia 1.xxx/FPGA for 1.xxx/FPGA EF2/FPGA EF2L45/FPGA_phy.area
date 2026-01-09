@@ -1,0 +1,93 @@
+standard
+***Report Model: fnirsi_1013D***
+
+IO Statistics
+#IO                    60
+  #input               36
+  #output              15
+  #inout                9
+
+Utilization Statistics
+#lut                  659   out of   4480   14.71%
+#reg                  473   out of   4480   10.56%
+#le                   966
+  #lut only           493   out of    966   51.04%
+  #reg only           307   out of    966   31.78%
+  #lut&reg            166   out of    966   17.18%
+#dsp                    0   out of     15    0.00%
+#bram                   0   out of     12    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                6   out of      6  100.00%
+#pad                   60   out of    109   55.05%
+  #ireg                 0
+  #oreg                14
+  #treg                 0
+#pll                    1   out of      1  100.00%
+#gclk                   4   out of     16   25.00%
+
+
+Detailed IO Report
+
+       Name         Direction    Location    IOStandard    DriveStrength    PullType     PackReg   
+   i_adc1A_d[7]       INPUT        P26        LVCMOS33          N/A           NONE        NONE     
+   i_adc1A_d[6]       INPUT        P27        LVCMOS33          N/A           NONE        NONE     
+   i_adc1A_d[5]       INPUT        P28        LVCMOS33          N/A           NONE        NONE     
+   i_adc1A_d[4]       INPUT        P31        LVCMOS33          N/A           NONE        NONE     
+   i_adc1A_d[3]       INPUT        P32        LVCMOS33          N/A           NONE        NONE     
+   i_adc1A_d[2]       INPUT        P33        LVCMOS33          N/A           NONE        NONE     
+   i_adc1A_d[1]       INPUT        P34        LVCMOS33          N/A           NONE        NONE     
+   i_adc1A_d[0]       INPUT        P35        LVCMOS33          N/A           NONE        NONE     
+   i_adc1B_d[7]       INPUT        P45        LVCMOS33          N/A           NONE        NONE     
+   i_adc1B_d[6]       INPUT        P44        LVCMOS33          N/A           NONE        NONE     
+   i_adc1B_d[5]       INPUT        P43        LVCMOS33          N/A           NONE        NONE     
+   i_adc1B_d[4]       INPUT        P42        LVCMOS33          N/A           NONE        NONE     
+   i_adc1B_d[3]       INPUT        P41        LVCMOS33          N/A           NONE        NONE     
+   i_adc1B_d[2]       INPUT        P40        LVCMOS33          N/A           NONE        NONE     
+   i_adc1B_d[1]       INPUT        P39        LVCMOS33          N/A           NONE        NONE     
+   i_adc1B_d[0]       INPUT        P38        LVCMOS33          N/A           NONE        NONE     
+   i_adc2A_d[7]       INPUT        P55        LVCMOS33          N/A           NONE        NONE     
+   i_adc2A_d[6]       INPUT        P56        LVCMOS33          N/A           NONE        NONE     
+   i_adc2A_d[5]       INPUT        P57        LVCMOS33          N/A           NONE        NONE     
+   i_adc2A_d[4]       INPUT        P58        LVCMOS33          N/A           NONE        NONE     
+   i_adc2A_d[3]       INPUT        P59        LVCMOS33          N/A           NONE        NONE     
+   i_adc2A_d[2]       INPUT        P60        LVCMOS33          N/A           NONE        NONE     
+   i_adc2A_d[1]       INPUT        P61        LVCMOS33          N/A           NONE        NONE     
+   i_adc2A_d[0]       INPUT        P62        LVCMOS33          N/A           NONE        NONE     
+   i_adc2B_d[7]       INPUT        P82        LVCMOS33          N/A           NONE        NONE     
+   i_adc2B_d[6]       INPUT        P81        LVCMOS33          N/A           NONE        NONE     
+   i_adc2B_d[5]       INPUT        P78        LVCMOS33          N/A           NONE        NONE     
+   i_adc2B_d[4]       INPUT        P77        LVCMOS33          N/A           NONE        NONE     
+   i_adc2B_d[3]       INPUT        P76        LVCMOS33          N/A           NONE        NONE     
+   i_adc2B_d[2]       INPUT        P75        LVCMOS33          N/A           NONE        NONE     
+   i_adc2B_d[1]       INPUT        P74        LVCMOS33          N/A           NONE        NONE     
+   i_adc2B_d[0]       INPUT        P73        LVCMOS33          N/A           NONE        NONE     
+    i_mcu_clk         INPUT        P105       LVCMOS33          N/A           NONE        NONE     
+    i_mcu_dcs         INPUT        P107       LVCMOS33          N/A           NONE        NONE     
+    i_mcu_rws         INPUT        P106       LVCMOS33          N/A           NONE        NONE     
+      i_xtal          INPUT        P128       LVCMOS33          N/A           NONE        NONE     
+    o_ac_dc_1        OUTPUT        P92        LVCMOS33          20            NONE        OREG     
+    o_ac_dc_2        OUTPUT        P93        LVCMOS33          20            NONE        OREG     
+   o_adc1_encA       OUTPUT        P25        LVCMOS33          20            NONE        OREG     
+   o_adc1_encB       OUTPUT        P47        LVCMOS33           8            NONE        NONE     
+   o_adc2_encA       OUTPUT        P54        LVCMOS33           8            NONE        OREG     
+   o_adc2_encB       OUTPUT        P83        LVCMOS33          20            NONE        NONE     
+    o_offset_1       OUTPUT        P50        LVCMOS33           8            NONE        OREG     
+    o_offset_2       OUTPUT        P52        LVCMOS33           8            NONE        OREG     
+  o_pwm_display      OUTPUT         P4        LVCMOS33          20            NONE        OREG     
+    o_relay1_1       OUTPUT        P84        LVCMOS33          20           PULLUP       OREG     
+    o_relay1_2       OUTPUT        P85        LVCMOS33          20           PULLUP       OREG     
+    o_relay1_3       OUTPUT        P87        LVCMOS33          20           PULLUP       OREG     
+    o_relay2_1       OUTPUT        P91        LVCMOS33          20           PULLUP       OREG     
+    o_relay2_2       OUTPUT        P86        LVCMOS33          20           PULLUP       OREG     
+    o_relay2_3       OUTPUT        P89        LVCMOS33          20           PULLUP       OREG     
+  io_mcu_data[7]      INOUT        P104       LVCMOS33          20            NONE        TREG     
+  io_mcu_data[6]      INOUT        P103       LVCMOS33          20            NONE        TREG     
+  io_mcu_data[5]      INOUT        P100       LVCMOS33          20            NONE        TREG     
+  io_mcu_data[4]      INOUT        P99        LVCMOS33          20            NONE        TREG     
+  io_mcu_data[3]      INOUT        P98        LVCMOS33          20            NONE        TREG     
+  io_mcu_data[2]      INOUT        P97        LVCMOS33          20            NONE        TREG     
+  io_mcu_data[1]      INOUT        P96        LVCMOS33          20            NONE        TREG     
+  io_mcu_data[0]      INOUT        P95        LVCMOS33          20            NONE        TREG     
+   o_1khz_calib       INOUT        P94        LVCMOS33          20            NONE      OREG;TREG  
+
