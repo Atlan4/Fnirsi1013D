@@ -4,5 +4,7 @@ No one is responsible for anything, you do everything at your own risk.
 2. fpga-1013D-1-zb25vq80.bin - original FNIRSI FPGA firmware for SPI flash
 3. FPGA.bin - custom firmware for FPGA SPI flash
 
+IMPORTANT: bootloader v0.8 or higer.
+
 For programing SPI flash use CH341 with 3.3V converter
  
