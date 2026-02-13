@@ -124,11 +124,11 @@ module fnirsi_1013D
 //Wires to connect parts together
 
   wire clk_200MHz;
-  wire clk_ADC;//
+  
   //wire clk_ADC0;
   
   wire clk_50MHz;
-  wire clk_1KHz;//
+  //wire clk_1KHz;
   wire clk_out;
 
   wire sample_clock_enable;
@@ -224,7 +224,9 @@ module fnirsi_1013D
   localparam BUFFER_BITS = 13;
   localparam BUFFER_SIZE = 1 << BUFFER_BITS;  // 8192
 
-  reg [12:0] pretrigger_samples= 750;     // samples before trigger alias set_trigger_point
+  localparam MEM_END_ADDR = 13'h17FF;  // MEMORY LIMIT FOR FPGA EF2L45 = 6143
+
+  reg [12:0] pretrigger_samples = 750;    // samples before trigger alias set_trigger_point
   reg [12:0] total_samples = 1500;        // total number of samples (pretrigger + posttrigger)
 
   reg [12:0] trigger_read_address;        //A counter that starts to count when the half way point has been passed (0x0320)
@@ -330,12 +332,12 @@ freq_generator_dds_pwm u_freq
 
   pwmcounter #
   (
-    .LAST (59999)//2047 59999 1861
+    .LAST (59999)
   )
   display_brightness
   (
     .clk        (clk_50MHz),
-    .pulsewidth (display_brigthness >> 5),	//.pulsewidth (display_brigthness),
+    .pulsewidth (display_brigthness),
     .pwm        (o_pwm_display)
   );
 
@@ -384,14 +386,14 @@ freq_generator_dds_pwm u_freq
   always @(negedge clk_200MHz)
     begin
       if(sample_clock_enable == 1)
-        sample_rate_counter <= 0;
+        sample_rate_counter <= 1;
       else
         sample_rate_counter <= sample_rate_counter + 1;
     end
 
   //To allow the sample clock to range from 100MHz down to very low rates the plus one is needed.
   //Without it the maximum output would be 50MHz.
-  assign sample_clock_enable = sample_rate_divider < (sample_rate_counter + 1);
+  assign sample_clock_enable = sample_rate_divider < (sample_rate_counter);
 
 //-------------------------------------------------------------------------------------
 //Sampling write address counter
@@ -402,7 +404,8 @@ freq_generator_dds_pwm u_freq
       if(sample_system_reset == 1)
         sample_write_address <= 0;
       else
-        sample_write_address <= sample_write_address + 1;
+		if (sample_write_address >= 6143) sample_write_address <= 0; 
+        else sample_write_address <= sample_write_address + 1;
     end
 
 //-------------------------------------------------------------------------------------
@@ -437,9 +440,23 @@ freq_generator_dds_pwm u_freq
 //-------------------------------------------------------------------------------------
 // Sampling is stopped when a trigger has been found AND the post-trigger region is complete 
 // or when in auto mode a time out occurred
-
+/*
 // delta address (modulo 8192)
   assign  addr_delta = trigger_read_address - trigger_address;
+
+  assign sampling_enable = ~(
+    (sampling_triggered && (addr_delta >= total_samples - pretrigger_samples))//);  // post-trigger complete
+         || (~trigger_mode && time_base_timeout)                                    // auto mode timeout
+         				 );
+*/
+// delta address (modulo 8192)
+// FOR FPGA AL3L10 EP6C4 = 8192
+//  assign  addr_delta = trigger_read_address - trigger_address; // FOR FPGA AL3L10 EP6C4
+ 
+// FOR FPGA EF2L45 = 6143  
+  assign addr_delta = (trigger_read_address >= trigger_address) ? 
+                  (trigger_read_address - trigger_address) : 
+                  ((trigger_read_address + 6144) - trigger_address);
 
   assign sampling_enable = ~(
     (sampling_triggered && (addr_delta >= total_samples - pretrigger_samples))//);  // post-trigger complete
@@ -499,7 +516,7 @@ assign sampling_enable = ~(
          trigger_previous <= trigger_data;
 
          //current sample
-	     trigger_data <= trigger_channel ? i_adc2A_d : i_adc1A_d;
+	 trigger_data <= trigger_channel ? i_adc2A_d : i_adc1A_d;
        end
   end
 
@@ -533,12 +550,13 @@ assign sampling_enable = ~(
       if(sample_system_reset == 1)
         trigger_address <= 0;
         
-     else if(sampling_triggered == 0)
-       begin
-        if (~trigger_mode && time_base_timeout) trigger_address <= pretrigger_samples;
-        else trigger_address <= trigger_read_address;
-       end
-
+      else if(sampling_triggered == 0)
+        begin
+          if (~trigger_mode && time_base_timeout)
+            trigger_address <= pretrigger_samples;
+          else
+            trigger_address <= trigger_read_address;
+        end
     end
 
 //=====================================================================================
@@ -848,7 +866,7 @@ assign sampling_enable = ~(
               begin
                 case(mcu_state)
                   4'h0:
-                    o_mcu_data <= 8'h15;
+                    o_mcu_data <= 8'h16;
                   4'h1:
                     o_mcu_data <= 8'h32;
                 endcase
