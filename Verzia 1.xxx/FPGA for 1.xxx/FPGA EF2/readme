@@ -5,3 +5,4 @@ IMPORTANT: Install frst bootloader v0.8 or higer.
 1. FPGA EF2L45 directory with project - Anlogic TD
 2. PROGRAMER - The schema and flash file is stm32f103c8t6. 
 3. To program the EF2L45 FPGA, you need to use a programmer and install the Anlogic TD development environment.
+   EF2 fnirsi backup.bin - original FNIRSI FPGA firmware for FPGA flash
