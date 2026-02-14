@@ -246,7 +246,7 @@ module fnirsi_1013D
     .clk1_out (clk_ADC)
 
     //.clk1_out (clk_ADC90),
-  //.clk2_out (clk_ADC0)
+    //.clk2_out (clk_ADC0)
 
   );
 
@@ -384,14 +384,14 @@ freq_generator_dds_pwm u_freq
   always @(negedge clk_200MHz)
     begin
       if(sample_clock_enable == 1)
-        sample_rate_counter <= 0;
+        sample_rate_counter <= 1;
       else
         sample_rate_counter <= sample_rate_counter + 1;
     end
 
   //To allow the sample clock to range from 100MHz down to very low rates the plus one is needed.
   //Without it the maximum output would be 50MHz.
-  assign sample_clock_enable = sample_rate_divider < (sample_rate_counter + 1);
+  assign sample_clock_enable = sample_rate_divider < (sample_rate_counter);
 
 //-------------------------------------------------------------------------------------
 //Sampling write address counter
