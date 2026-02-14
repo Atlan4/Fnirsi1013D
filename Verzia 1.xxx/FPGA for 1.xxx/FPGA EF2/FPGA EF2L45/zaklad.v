@@ -124,7 +124,6 @@ module fnirsi_1013D
 //Wires to connect parts together
 
   wire clk_200MHz;
-  
   //wire clk_ADC0;
   
   wire clk_50MHz;
@@ -224,7 +223,7 @@ module fnirsi_1013D
   localparam BUFFER_BITS = 13;
   localparam BUFFER_SIZE = 1 << BUFFER_BITS;  // 8192
 
-  localparam MEM_END_ADDR = 13'h17FF;  // MEMORY LIMIT FOR FPGA EF2L45 = 6143
+  localparam MEM_END_ADDR = 13'h17FF;     // MEMORY LIMIT FOR FPGA EF2L45 = 6143
 
   reg [12:0] pretrigger_samples = 750;    // samples before trigger alias set_trigger_point
   reg [12:0] total_samples = 1500;        // total number of samples (pretrigger + posttrigger)
@@ -404,7 +403,7 @@ freq_generator_dds_pwm u_freq
       if(sample_system_reset == 1)
         sample_write_address <= 0;
       else
-		if (sample_write_address >= 6143) sample_write_address <= 0; 
+       if (sample_write_address >= MEM_END_ADDR) sample_write_address <= 0; 
         else sample_write_address <= sample_write_address + 1;
     end
 
@@ -424,7 +423,6 @@ freq_generator_dds_pwm u_freq
     end
 
   assign time_base_timeout = time_base_cnt > time_base_set;
-
 
 //-------------------------------------------------------------------------------------
 //Sample writing enable control
@@ -537,9 +535,12 @@ assign sampling_enable = ~(
   always @(posedge sample_write_clock)
     begin
       if(sample_system_reset == 1)
-        trigger_read_address <= pretrigger_samples;   //Starting point in memory
-      else if((sampling_half_way == 1)&&(sampling_enable == 1))
-        trigger_read_address <= trigger_read_address + 1;
+        trigger_read_address <= pretrigger_samples;
+      else if((sampling_half_way == 1)&&(sampling_enable == 1)) 
+        begin
+          if(trigger_read_address >= MEM_END_ADDR) trigger_read_address <= 0;    
+          else trigger_read_address <= trigger_read_address + 1;
+        end
     end
 
 //-------------------------------------------------------------------------------------
@@ -622,7 +623,8 @@ assign sampling_enable = ~(
     begin
       if((i_mcu_dcs == 0) & (i_mcu_rws == 0) & ((mcu_command == 8'h20) | (mcu_command == 8'h21) | (mcu_command == 8'h22) | (mcu_command == 8'h23)))
         begin       
-          sample_read_offset = sample_read_offset + 1;
+          if (sample_read_offset >= MEM_END_ADDR) sample_read_offset <= 0; 
+          else sample_read_offset <= sample_read_offset + 1;
         end
         
       else if((i_mcu_dcs == 0) & (i_mcu_rws == 1) & (mcu_command == 8'h1F))
